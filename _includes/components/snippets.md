@@ -12,6 +12,17 @@ footer:
     repairs before any of the work is done and you will only pay for the repairs you
     need with no hidden costs. This is why we have so many satisfied customers and
     we would like for you to share that experience.
+  block_1:
+    title: Our Vision
+    text: Spectrum Air Conditioning strives to build the trust of our family of customers
+      based on our honesty and quality of work. It is our goal to fix it right the
+      first time. Our policy is to ensure that you will always know the cost of repairs
+      before any of the work is done and you will only pay for the repairs you need
+      with no hidden costs. This is why we have so many satisfied customers and we
+      would like for you to share that experience.
+  block_2:
+    title: ''
+    text: ''
 social_media:
   facebook_url: https://twitter.com/spectrumacla
   twitter_url: https://facebook.com/SpectrumAirConditioningHeating
