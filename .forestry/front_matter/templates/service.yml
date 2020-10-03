@@ -17,15 +17,18 @@ fields:
     date_format: 
     time_format: 
     display_utc: false
-  hidden: false
+  hidden: true
   default: now
 pages:
+- products/air-conditioning.md
 - products/blown-insulation.md
 - products/ductless-systems.md
 - products/generators.md
+- products/heating.md
 - products/indoor-air-quality.md
 - products/metal-fabrication.md
 - products/solar-panel-systems.md
-- products/test.md
 - products/zoning.md
 - services/installation.md
+- services/maintenance.md
+- services/service.md

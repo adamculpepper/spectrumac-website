@@ -1,4 +1,5 @@
 ---
+date: 2020-10-03T23:20:54Z
 title: Patti M
 body: From my initial contact, by phone, I have been very impressed with the professionalism
   of Spectrum. Having your technicians in my home for a full day's work of replacing

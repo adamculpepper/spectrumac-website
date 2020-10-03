@@ -16,6 +16,17 @@ fields:
     schema:
       format: markdown
   label: Quote
+- name: date
+  type: datetime
+  label: Date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  default: now
+  hidden: true
 pages:
 - testimonials/bryan-d.md
 - testimonials/clyde-h.md
@@ -26,4 +37,4 @@ pages:
 - testimonials/rosa-j.md
 - testimonials/sabrina-t.md
 - testimonials/sharon-e.md
-- testimonials/tolly-tt.md
+- testimonials/tolly-t.md
