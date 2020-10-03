@@ -8,6 +8,16 @@ fields:
 - type: textarea
   name: body
   label: body
+- name: date
+  type: datetime
+  label: Date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+  hidden: true
 pages:
 - products/blown-insulation.md
 - products/ductless-systems.md
