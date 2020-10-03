@@ -21,6 +21,7 @@ fields:
   default: now
 pages:
 - products/1.md
+- products/2.md
 - products/blown-insulation.md
 - products/ductless-systems.md
 - products/generators.md
