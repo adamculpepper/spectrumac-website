@@ -40,7 +40,7 @@ sections:
   templates:
   - faq
 upload_dir: ''
-public_path: "/assets/documents"
+public_path: _includes/assets/documents
 front_matter_path: ''
 use_front_matter_path: 
 file_template: ":filename:"
