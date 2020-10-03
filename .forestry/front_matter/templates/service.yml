@@ -21,10 +21,8 @@ fields:
   default: now
 pages:
 - products/1.md
-- products/2.md
 - products/3.md
 - products/blown-insulation.md
-- products/ductless-systems.md
 - products/ductless-systems2.md
 - products/indoor-air-quality.md
 - products/zoning.md
