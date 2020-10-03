@@ -42,7 +42,7 @@ sections:
   path: pages/home.md
   label: Address
 - type: document
-  path: _includes/components/footer.md
+  path: components/footer.md
   label: Footer
 upload_dir: ''
 public_path: _includes/assets/documents
