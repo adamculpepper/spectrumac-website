@@ -20,8 +20,6 @@ fields:
   hidden: false
   default: now
 pages:
-- products/1.md
-- products/3.md
 - products/blown-insulation.md
 - products/ductless-systems2.md
 - products/indoor-air-quality.md
