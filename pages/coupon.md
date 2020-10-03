@@ -6,5 +6,4 @@ eleventyNavigation:
   key: Coupon
   order: 7
 ---
-
-coupon content here
+coupon content here2
