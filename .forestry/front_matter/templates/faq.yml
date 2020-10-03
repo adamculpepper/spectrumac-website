@@ -26,6 +26,7 @@ fields:
   default: now
 pages:
 - faqs/a-c-frozen-iced-up.md
+- faqs/making-noise-inside.md
 - faqs/no-air-out-of-vents-grills.md
 - faqs/no-display-on-thermostat.md
 - faqs/nothing-will-come-on.md
