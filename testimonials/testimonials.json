@@ -1,0 +1,7 @@
+{
+  "layout": "layouts/testimonials.njk",
+  "permalink": "testimonial/{{ title | slug }}/index.html",
+  "tags": [
+    "testimonials"
+  ]
+}

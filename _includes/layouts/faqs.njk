@@ -1,0 +1,14 @@
+---
+layout: layouts/base.njk
+section: faqs
+---
+
+{{ layoutContent | safe }}
+
+
+<h2>FAQs</h2>
+<ul>
+{%- for faq in collections.faqs -%}
+  <li>{{ faq.data.title }} - {{ faq.url }} - {{ faq.data.body }}</li>
+{%- endfor -%}
+</ul>

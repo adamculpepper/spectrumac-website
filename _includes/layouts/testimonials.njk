@@ -1,0 +1,13 @@
+---
+layout: layouts/base.njk
+section: testimonials
+---
+
+{{ layoutContent | safe }}
+
+<h2>testimonials</h2>
+<ul>
+{%- for testimonial in collections.testimonials -%}
+  <li>{{ testimonial.data.title }} - {{ testimonial.url }} - {{ testimonial.data.body }}</li>
+{%- endfor -%}
+</ul>
