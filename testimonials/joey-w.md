@@ -1,5 +1,5 @@
 ---
-title: Joey W.
+title: Joey W
 body: Everyone that I talked to was extremely helpful and polite. The service was
   very timely and professional and the techn8icians that came out were very profession
   and trustworthy. Very good workers that made you feel like you were the only client.
