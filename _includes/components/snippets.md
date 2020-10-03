@@ -21,8 +21,10 @@ footer:
       with no hidden costs. This is why we have so many satisfied customers and we
       would like for you to share that experience.
   block_2:
-    title: ''
-    text: ''
+    title: Our Guarantee
+    text: We are so confident in our factory trained technicians and our quality products
+      that we offer you a one year parts and labor warranty. We also honor all manufacturers'
+      warranties, some of which are for the life of your equipment.
 social_media:
   facebook_url: https://twitter.com/spectrumacla
   twitter_url: https://facebook.com/SpectrumAirConditioningHeating
