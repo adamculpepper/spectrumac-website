@@ -1,6 +1,6 @@
 ---
 company_name: ''
-phone_number: ''
+phone_number: "(225) 775-1372"
 physical_address: ''
 footer:
   our_guarantee: We are so confident in our factory trained technicians and our quality
