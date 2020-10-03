@@ -5,6 +5,12 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: testimonials
+  label: Testimonials
+  create: documents
+  match: "**/*"
+  exclude: "*.json"
+- type: directory
   path: products
   label: Products
   create: documents
