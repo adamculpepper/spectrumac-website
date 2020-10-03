@@ -7,7 +7,6 @@ sections:
 - type: document
   path: _includes/layouts/components/footer
   label: Footer
-  match: "**/*"
 - type: directory
   path: services
   label: Services
