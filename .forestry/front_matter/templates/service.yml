@@ -9,6 +9,7 @@ fields:
   name: body
   label: body
 pages:
+- products/blown-insulation.md
 - products/ductless-systems.md
 - products/generators.md
 - products/zoning.md
