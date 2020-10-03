@@ -1,4 +1,9 @@
 ---
 label: Footer
 hide_body: true
-fields: []
+fields:
+- name: footer
+  type: text
+  config:
+    required: false
+  label: Footer
