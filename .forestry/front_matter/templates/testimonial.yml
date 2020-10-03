@@ -27,4 +27,5 @@ fields:
     display_utc: false
   default: now
 pages:
+- testimonials/sabrina-t.md
 - testimonials/tolly-t.md
