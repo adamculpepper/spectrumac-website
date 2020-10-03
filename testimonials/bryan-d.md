@@ -1,5 +1,5 @@
 ---
-title: Bryan D.
+title: Bryan D
 body: Thank you so much for a wonderful job. Your technicians were very polite, patient
   and thorough at their job. My husband and I have used Spectrum for several different
   problems with both our air conditioner and heater and we wouldn't have chosen anyone
