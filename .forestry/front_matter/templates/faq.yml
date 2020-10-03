@@ -24,3 +24,5 @@ fields:
     time_format: 
     display_utc: false
   default: now
+pages:
+- faqs/running-but-not-cooling.md
