@@ -18,7 +18,7 @@ fields:
     time_format: 
     display_utc: false
   hidden: false
-  default: '2020-10-03T22:50:48Z'
+  default: now
 pages:
 - products/blown-insulation.md
 - products/ductless-systems.md
