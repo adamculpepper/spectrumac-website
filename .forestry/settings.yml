@@ -39,9 +39,8 @@ sections:
 - type: heading
   label: Content
 - type: document
-  path: _includes/components/address.md
+  path: pages/home.md
   label: Address
-  match: "**/*"
 - type: document
   path: _includes/components/footer.md
   label: Footer
