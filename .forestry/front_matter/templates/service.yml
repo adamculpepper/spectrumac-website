@@ -1,0 +1,10 @@
+---
+label: Service
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: textarea
+  name: body
+  label: body
