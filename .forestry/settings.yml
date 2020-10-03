@@ -5,7 +5,7 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
-  path: _includes/layouts/components/footer.njk
+  path: _includes/components/footer.njk
   label: Footer
 - type: directory
   path: services
