@@ -1,9 +1,0 @@
----
-label: Snippets2
-hide_body: true
-fields:
-- name: phone_number
-  type: text
-  config:
-    required: false
-  label: Phone Number
