@@ -17,4 +17,5 @@ fields:
       format: markdown
   label: Quote
 pages:
+- testimonials/sabrina-t.md
 - testimonials/tolly-tt.md
