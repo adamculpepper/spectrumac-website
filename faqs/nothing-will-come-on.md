@@ -1,5 +1,7 @@
 ---
 title: Nothing Will Come On
-causes: []
+causes:
+- Thermostat needs new batteries
+- Call for Service
 
 ---
