@@ -22,4 +22,5 @@ fields:
 pages:
 - products/air-conditioning.md
 - products/heating.md
+- products/zoning.md
 - services/installation.md
