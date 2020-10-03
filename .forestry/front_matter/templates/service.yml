@@ -20,4 +20,5 @@ fields:
   hidden: false
   default: now
 pages:
+- products/air-conditioning.md
 - services/installation.md
