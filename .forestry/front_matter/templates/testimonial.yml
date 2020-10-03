@@ -28,6 +28,7 @@ fields:
   default: now
   hidden: true
 pages:
+- testimonials/clyde-h.md
 - testimonials/dale-l.md
 - testimonials/joey-w.md
 - testimonials/sabrina-t.md
