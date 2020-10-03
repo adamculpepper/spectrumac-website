@@ -4,10 +4,6 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: _includes/components/address
-  label: Address
-  match: "**/*"
 - type: directory
   path: services
   label: Services
@@ -43,7 +39,11 @@ sections:
 - type: heading
   label: Content
 - type: document
-  path: _includes/components/footer.njk
+  path: _includes/components/address.md
+  label: Address
+  match: "**/*"
+- type: document
+  path: _includes/components/footer.md
   label: Footer
 upload_dir: ''
 public_path: _includes/assets/documents
