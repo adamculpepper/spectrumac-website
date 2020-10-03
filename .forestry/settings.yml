@@ -4,9 +4,6 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: _includes/components/footer.njk
-  label: Footer
 - type: directory
   path: services
   label: Services
@@ -39,6 +36,11 @@ sections:
   exclude: "*.json"
   templates:
   - faq
+- type: heading
+  label: Content
+- type: document
+  path: _includes/components/footer.njk
+  label: Footer
 upload_dir: ''
 public_path: _includes/assets/documents
 front_matter_path: ''
