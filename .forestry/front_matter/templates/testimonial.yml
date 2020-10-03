@@ -26,6 +26,7 @@ fields:
     time_format: 
     display_utc: false
   default: now
+  hidden: true
 pages:
 - testimonials/sabrina-t.md
 - testimonials/sharon-e.md
