@@ -8,3 +8,5 @@ fields:
 - type: textarea
   name: body
   label: body
+pages:
+- services/installation.md
