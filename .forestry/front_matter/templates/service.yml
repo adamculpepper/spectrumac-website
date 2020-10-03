@@ -9,4 +9,5 @@ fields:
   name: body
   label: body
 pages:
+- products/zoning.md
 - services/installation.md
