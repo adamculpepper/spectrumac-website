@@ -17,21 +17,6 @@ fields:
   config:
     required: false
   label: Physical Address
-- name: social_media
-  type: field_group
-  config: {}
-  fields:
-  - name: facebook_url
-    type: text
-    config:
-      required: false
-    label: Facebook URL
-  - name: twitter_url
-    type: text
-    config:
-      required: false
-    label: Twitter URL
-  label: Social Media
 - name: footer
   type: field_group
   config: {}
@@ -55,3 +40,18 @@ fields:
         format: markdown
     label: Our Vision
   label: Footer
+- name: social_media
+  type: field_group
+  config: {}
+  fields:
+  - name: facebook_url
+    type: text
+    config:
+      required: false
+    label: Facebook URL
+  - name: twitter_url
+    type: text
+    config:
+      required: false
+    label: Twitter URL
+  label: Social Media
