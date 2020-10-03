@@ -1,0 +1,7 @@
+{
+  "layout": "layouts/faqs.njk",
+  "permalink": "faq/{{ title | slug }}/index.html",
+  "tags": [
+    "faqs"
+  ]
+}

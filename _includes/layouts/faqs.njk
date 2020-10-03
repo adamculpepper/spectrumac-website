@@ -5,10 +5,16 @@ section: faqs
 
 {{ layoutContent | safe }}
 
-
-<h2>FAQs</h2>
+<h2>FAQs (Air Condition Tips)</h2>
 <ul>
 {%- for faq in collections.faqs -%}
-  <li>{{ faq.data.title }} - {{ faq.url }} - {{ faq.data.body }}</li>
+	<li>
+		{{ faq.data.title }}
+		<ul>
+			{%- for cause in faq.data.causes -%}
+				<li>{{ cause }}</li>
+			{%- endfor -%}
+		</ul>
+	</li>
 {%- endfor -%}
 </ul>
