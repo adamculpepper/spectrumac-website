@@ -17,6 +17,7 @@ fields:
       format: markdown
   label: Quote
 pages:
+- testimonials/bryan-d.md
 - testimonials/clyde-h.md
 - testimonials/dale-l.md
 - testimonials/joey-w.md
