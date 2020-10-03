@@ -1,4 +1,57 @@
 ---
 label: Snippets
 hide_body: true
-fields: []
+fields:
+- name: company_name
+  type: text
+  config:
+    required: false
+  label: Company Name
+- name: phone_number
+  type: text
+  config:
+    required: false
+  label: Phone Number
+- name: physical_address
+  type: text
+  config:
+    required: false
+  label: Physical Address
+- name: social_media
+  type: field_group
+  config: {}
+  fields:
+  - name: facebook_url
+    type: text
+    config:
+      required: false
+    label: Facebook URL
+  - name: twitter_url
+    type: text
+    config:
+      required: false
+    label: Twitter URL
+  label: Social Media
+- name: footer
+  type: field_group
+  config: {}
+  fields:
+  - name: our_guarantee
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Our Guarantee
+  - name: our_vision
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Our Vision
+  label: Footer
