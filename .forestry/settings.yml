@@ -5,13 +5,11 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: testimonials
-  label: Testimonials
+  path: services
+  label: Services
   create: documents
   match: "**/*"
   exclude: "*.json"
-  templates:
-  - testimonial
 - type: directory
   path: products
   label: Products
@@ -21,11 +19,13 @@ sections:
   templates:
   - service
 - type: directory
-  path: services
-  label: Services
+  path: testimonials
+  label: Testimonials
   create: documents
   match: "**/*"
   exclude: "*.json"
+  templates:
+  - testimonial
 - type: directory
   path: faqs
   label: FAQs
