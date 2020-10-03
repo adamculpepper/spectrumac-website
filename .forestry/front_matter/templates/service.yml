@@ -10,5 +10,6 @@ fields:
   label: body
 pages:
 - products/ductless-systems.md
+- products/generators.md
 - products/zoning.md
 - services/installation.md
