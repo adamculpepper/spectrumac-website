@@ -10,6 +10,8 @@ sections:
   create: documents
   match: "**/*"
   exclude: "*.json"
+  templates:
+  - faq
 - type: directory
   path: testimonials
   label: Testimonials
