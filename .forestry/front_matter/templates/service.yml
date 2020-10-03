@@ -21,4 +21,5 @@ fields:
   default: now
 pages:
 - products/air-conditioning.md
+- products/heating.md
 - services/installation.md
