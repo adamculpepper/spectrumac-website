@@ -16,5 +16,3 @@ fields:
     schema:
       format: markdown
   label: Quote
-pages:
-- testimonials/joey-w.md
