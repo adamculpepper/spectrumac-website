@@ -29,8 +29,8 @@ social_media:
   facebook_url: https://twitter.com/spectrumacla
   twitter_url: https://facebook.com/SpectrumAirConditioningHeating
 company_info:
-  company_name: ''
-  phone_number: ''
+  company_name: Spectrum Air Conditioning & Heating, Inc.
+  phone_number: "(225) 775-1372"
   physical_address:
     address1: 5613 Groom Rd
     address2: ''
