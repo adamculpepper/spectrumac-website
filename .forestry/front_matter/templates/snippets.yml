@@ -2,21 +2,21 @@
 label: Snippets
 hide_body: true
 fields:
-- name: company_name
-  type: text
-  config:
-    required: false
-  label: Company Name
-- name: phone_number
-  type: text
-  config:
-    required: false
-  label: Phone Number
-- name: physical_address
-  type: text
-  config:
-    required: false
-  label: Physical Address
+- name: company_info
+  type: field_group
+  config: {}
+  fields:
+  - name: company_name
+    type: text
+    config:
+      required: false
+    label: Company Name
+  - name: phone_number
+    type: text
+    config:
+      required: false
+    label: Phone Number
+  label: Company Info
 - name: footer
   type: field_group
   config: {}
@@ -75,5 +75,9 @@ fields:
       required: false
     label: Twitter URL
   label: Social Media
+- name: physical_address
+  type: field_group
+  config: {}
+  label: Physical Address
 pages:
 - _includes/components/snippets.md
