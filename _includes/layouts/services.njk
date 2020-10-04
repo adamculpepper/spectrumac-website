@@ -6,6 +6,30 @@ section: services
 {{ layoutContent | safe }}
 
 
+
+
+<h2>snippets</h2>
+
+
+
+
+
+
+
+
+
+
+{{ metadata.company_info.company_name }}<br>
+{{ metadata.company_info.phone_number }}<br>
+{{ metadata.company_info.physical_address.address1 }}<br>
+{{ metadata.company_info.physical_address.city }}<br>
+{{ metadata.company_info.physical_address.state }}<br>
+{{ metadata.company_info.physical_address.zipcode }}<br>
+
+
+
+
+
 <h2>services</h2>
 <ul>
 {%- for service in collections.services -%}
