@@ -28,5 +28,14 @@ footer:
 social_media:
   facebook_url: https://twitter.com/spectrumacla
   twitter_url: https://facebook.com/SpectrumAirConditioningHeating
+company_info:
+  company_name: ''
+  phone_number: ''
+  physical_address:
+    address1: 5613 Groom Rd
+    address2: ''
+    city: Baker
+    state: LA
+    zipcode: "70714"
 
 ---
