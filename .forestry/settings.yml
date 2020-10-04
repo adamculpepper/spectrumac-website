@@ -4,10 +4,6 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: _includes/components/settings.json
-  label: Settings
-  match: "**/*"
 - type: directory
   path: services
   label: Services
@@ -45,6 +41,10 @@ sections:
 - type: document
   path: _includes/components/snippets.md
   label: Snippets
+- type: document
+  path: _includes/components/settings.json
+  label: Settings
+  match: "**/*"
 upload_dir: ''
 public_path: _includes/assets/uploads
 front_matter_path: ''
