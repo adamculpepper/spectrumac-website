@@ -39,11 +39,8 @@ sections:
 - type: heading
   label: Content
 - type: document
-  path: _includes/components/snippets.md
-  label: Snippets
-- type: document
-  path: _includes/components/settings.json
-  label: Settings
+  path: _data/metadata.json
+  label: Metadata
 upload_dir: ''
 public_path: _includes/assets/uploads
 front_matter_path: ''
