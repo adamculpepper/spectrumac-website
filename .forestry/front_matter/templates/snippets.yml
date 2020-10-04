@@ -16,6 +16,38 @@ fields:
     config:
       required: false
     label: Phone Number
+  - name: physical_address
+    type: field_group
+    config: {}
+    fields:
+    - name: address1
+      type: text
+      config:
+        required: false
+      label: Address1
+    - name: address2
+      type: text
+      config:
+        required: false
+      label: Address2
+    - name: city
+      type: text
+      config:
+        required: false
+      label: City
+    - name: state
+      type: text
+      config:
+        required: false
+        min: 2
+        max: 2
+      label: State
+    - name: zipcode
+      type: text
+      config:
+        required: false
+      label: Zipcode
+    label: Physical Address
   label: Company Info
 - name: footer
   type: field_group
@@ -75,9 +107,5 @@ fields:
       required: false
     label: Twitter URL
   label: Social Media
-- name: physical_address
-  type: field_group
-  config: {}
-  label: Physical Address
 pages:
 - _includes/components/snippets.md
