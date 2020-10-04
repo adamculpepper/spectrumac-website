@@ -108,4 +108,4 @@ fields:
     label: Twitter URL
   label: Social Media
 pages:
-- _includes/components/snippets.md
+- _data/metadata.json

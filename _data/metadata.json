@@ -1,28 +1,28 @@
 {
-	"url": "https://spectrumac.netlify.app",
-	"company_info": {
-		"company_name": "Spectrum Air Conditioning & Heating, Inc.",
-		"phone_number": "(225) 775-1372",
-		"physical_address": {
-			"state": "LA",
-			"zipcode": "70714",
-			"address1": "5613 Groom Rd.",
-			"city": "Baker",
-			"address2": ""
-		}
-	},
-	"footer": {
-		"block_1": {
-			"title": "",
-			"text": ""
-		},
-		"block_2": {
-			"title": "",
-			"text": ""
-		}
-	},
-	"social_media": {
-		"facebook_url": "",
-		"twitter_url": ""
-	}
+  "url": "https://spectrumac.netlify.app",
+  "company_info": {
+    "company_name": "Spectrum Air Conditioning & Heating, Inc.",
+    "phone_number": "(225) 775-1372",
+    "physical_address": {
+      "state": "LA",
+      "zipcode": "70714",
+      "address1": "5613 Groom Rd.",
+      "city": "Baker",
+      "address2": ""
+    }
+  },
+  "footer": {
+    "block_1": {
+      "title": "",
+      "text": ""
+    },
+    "block_2": {
+      "title": "Our Guarantee",
+      "text": "We are so confident in our factory trained technicians and our quality products that we offer you a one year parts and labor warranty. We also honor all manufacturers' warranties, some of which are for the life of your equipment."
+    }
+  },
+  "social_media": {
+    "facebook_url": "",
+    "twitter_url": ""
+  }
 }
