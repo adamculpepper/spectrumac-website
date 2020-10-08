@@ -11,7 +11,7 @@ sections:
   match: "**/*"
   exclude: "*.json"
 - type: heading
-  label: Content
+  label: Items
 - type: directory
   path: services
   label: Services
