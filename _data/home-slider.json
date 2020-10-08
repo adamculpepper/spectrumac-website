@@ -5,6 +5,12 @@
       "link": "/about",
       "caption": "test caption 1",
       "image": ""
+    },
+    {
+      "title": "Banner2",
+      "link": "/testimonials",
+      "caption": "caption2",
+      "image": ""
     }
   ]
 }
