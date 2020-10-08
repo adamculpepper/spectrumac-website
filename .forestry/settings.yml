@@ -49,7 +49,7 @@ sections:
 - type: document
   path: _data/metadata.json
   label: Metadata
-upload_dir: ''
+upload_dir: uploads
 public_path: _includes/assets/uploads
 front_matter_path: ''
 use_front_matter_path: 
