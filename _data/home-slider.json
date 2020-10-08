@@ -4,13 +4,15 @@
       "title": "Banner1",
       "link": "/about",
       "caption": "test caption 1",
-      "image": ""
+      "image": "",
+      "enabled": true
     },
     {
       "title": "Banner2",
       "link": "/testimonials",
       "caption": "caption2",
-      "image": ""
+      "image": "",
+      "enabled": false
     }
   ]
 }
