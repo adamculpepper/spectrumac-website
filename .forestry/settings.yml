@@ -4,9 +4,6 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: _data/home-slider.json
-  label: Home Slider
 - type: directory
   path: pages
   label: Pages
@@ -47,6 +44,9 @@ sections:
   exclude: "*.json"
   templates:
   - faq
+- type: document
+  path: _data/home-slider.json
+  label: Home Slider
 - type: document
   path: _data/metadata.json
   label: Metadata
