@@ -5,6 +5,14 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: pages
+  label: Pages
+  create: documents
+  match: "**/*"
+  exclude: "*.json"
+- type: heading
+  label: Items
+- type: directory
   path: services
   label: Services
   create: documents
