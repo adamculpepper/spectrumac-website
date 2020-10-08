@@ -46,7 +46,7 @@ sections:
   - faq
 - type: document
   path: _data/home-slider.json
-  label: Home Slider
+  label: Home Slides
 - type: document
   path: _data/metadata.json
   label: Metadata
