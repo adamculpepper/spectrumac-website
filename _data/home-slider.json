@@ -30,10 +30,10 @@
     },
     {
       "enabled": false,
-      "title": "",
-      "link": "",
+      "title": "Banner 5 - Coupon",
+      "link": "/coupon",
       "caption": "",
-      "image": ""
+      "image": "/_includes/assets/uploads/banner5.png"
     },
     {
       "enabled": false,
