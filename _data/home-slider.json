@@ -12,7 +12,7 @@
       "link": "/testimonials",
       "caption": "caption2",
       "image": "",
-      "enabled": false
+      "enabled": true
     }
   ]
 }
