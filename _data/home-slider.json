@@ -36,9 +36,9 @@
       "image": "/_includes/assets/uploads/banner5.png"
     },
     {
-      "enabled": false,
-      "title": "",
-      "link": "",
+      "enabled": true,
+      "title": "Banner 6 - Solar",
+      "link": "/services",
       "caption": "",
       "image": ""
     },
