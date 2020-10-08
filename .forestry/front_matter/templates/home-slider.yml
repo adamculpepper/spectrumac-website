@@ -2,7 +2,7 @@
 label: Home Slider
 hide_body: true
 fields:
-- name: slide
+- name: slides
   type: field_group_list
   fields:
   - name: enabled
@@ -32,6 +32,6 @@ fields:
     min: 
     max: 
     labelField: 
-  label: Slide
+  label: Slides
 pages:
 - _data/home-slider.json
