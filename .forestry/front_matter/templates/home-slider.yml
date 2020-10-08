@@ -5,6 +5,9 @@ fields:
 - name: slide
   type: field_group_list
   fields:
+  - name: enabled
+    type: boolean
+    label: Enabled
   - name: title
     type: text
     config:
