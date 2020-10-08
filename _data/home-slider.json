@@ -11,7 +11,7 @@
       "title": "Banner 2 - Services",
       "link": "/services",
       "caption": "caption2",
-      "image": "",
+      "image": "/_includes/assets/uploads/banner2.png",
       "enabled": true
     }
   ]
