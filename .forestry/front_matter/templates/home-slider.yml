@@ -33,5 +33,3 @@ fields:
     max: 
     labelField: 
   label: Slides
-pages:
-- _data/home-slider.json
