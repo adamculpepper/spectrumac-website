@@ -1,6 +1,62 @@
+{% set address %}
+{{ metadata.company_info.physical_address.address1 }}&nbsp;
+{{ metadata.company_info.physical_address.city }},&nbsp;
+{{ metadata.company_info.physical_address.state }}&nbsp;
+{{ metadata.company_info.physical_address.zipcode }}
+{% endset %}
+
 <footer>
-  <small>
-    This project is maintained by <a href="https://www.danurbanowicz.com">Dan Urbanowicz</a>.
-    Check out the <a href="{{ pkg.repository.url }}">GitHub repo</a>.
-  </small>
+	<div id="footer1" class="row">
+		<div class="container">
+			<div class="col-sm-4 col-1">
+				<h4>{{ metadata.footer.block_1.title }}</h4>
+				<p>{{ metadata.footer.block_1.text }}</p>
+				<a class="btn btn-primary" href="/about">Read More About Us <em class="fa fa-chevron-right"></em></a>
+			</div>
+			<div class="col-sm-4 col-2">
+				<div class="form">
+					<span class="top">Let Us Know How</span>
+					<span class="bot">We Can Service You?</span>
+					[form]
+				</div>
+			</div>
+			<div class="col-sm-4 col-3">
+				<h4>{{ metadata.footer.block_2.title }}</h4>
+				<p>{{ metadata.footer.block_2.text }}</p>
+				<a class="btn btn-primary" href="/testimonials">Read Testimonials <em class="fa fa-chevron-right"></em></a>
+			</div>
+		</div>
+	</div>
+	<div id="footer2" class="row">
+		<div class="container">
+			<div class="col-sm-4 copyright">&copy; Copyright 2020 <a href="/">{{ metadata.company_info.company_name }}</a></div>
+			<div class="col-sm-4 address">
+				<div class="pull-right">
+					<div class="info">
+						{{ address | safe }}
+						<span class="dot"></span>
+						<span type="tel">{{ metadata.company_info.phone_number }}</span>
+					</div>
+					<div class="social">
+						<a target="social" class="fa fa-facebook-square" href="{{ metadata.social_media.facebook_url }}"></a>
+						<a target="social" class="fa fa-twitter-square" href="{{ metadata.social_media.twitter_url }}"></a>
+						<a target="social" class="hide fa fa-youtube-square" href="#"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </footer>
+
+{% set js %}
+	javascript
+{% endset %}
+<script>{{ js | jsmin | safe }}</script>
+
+
+<script src="/_includes/assets/js/jquery.min.js"></script>
+<script src="/_includes/assets/js/jquery-ui.min.js"></script>
+<script src="/_includes/assets/js/bootstrap.min.js"></script>
+<script src="/_includes/assets/js/jquery.cycle2.js"></script>
+<script src="/_includes/assets/js/jquery.cycle2.caption2.min.js"></script>
+<script src="/_includes/assets/js/scripts.js"></script>
