@@ -11,7 +11,7 @@ sections:
   match: "**/*"
   exclude: "*.json"
 - type: heading
-  label: Items
+  label: Content
 - type: directory
   path: services
   label: Services
@@ -44,8 +44,6 @@ sections:
   exclude: "*.json"
   templates:
   - faq
-- type: heading
-  label: Content
 - type: document
   path: _data/metadata.json
   label: Metadata
