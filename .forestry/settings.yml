@@ -7,7 +7,6 @@ sections:
 - type: document
   path: _data/home-slider.json
   label: Home Slider
-  match: "**/*"
 - type: directory
   path: pages
   label: Pages
