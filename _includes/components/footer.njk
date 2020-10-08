@@ -1,9 +1,7 @@
-{% set address %}
-{{ metadata.company_info.physical_address.address1 }}&nbsp;
-{{ metadata.company_info.physical_address.city }},&nbsp;
-{{ metadata.company_info.physical_address.state }}&nbsp;
-{{ metadata.company_info.physical_address.zipcode }}
-{% endset %}
+{% set address1 = metadata.company_info.physical_address.address1 %}
+{% set city = metadata.company_info.physical_address.city %}
+{% set state = metadata.company_info.physical_address.state %}
+{% set zipcode = metadata.company_info.physical_address.zipcode %}
 
 <footer>
 	<div id="footer1" class="row">
@@ -33,7 +31,7 @@
 			<div class="col-sm-4 address">
 				<div class="pull-right">
 					<div class="info">
-						{{ address | safe }}
+						{{ address1 }} {{ city }}, {{ state }} {{ zipcode }}
 						<span class="dot"></span>
 						<span type="tel">{{ metadata.company_info.phone_number }}</span>
 					</div>
@@ -52,7 +50,6 @@
 	javascript
 {% endset %}
 <script>{{ js | jsmin | safe }}</script>
-
 
 <script src="/_includes/assets/js/jquery.min.js"></script>
 <script src="/_includes/assets/js/jquery-ui.min.js"></script>

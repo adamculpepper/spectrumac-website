@@ -1,9 +1,7 @@
 /*@import url(http://fonts.googleapis.com/css?family=Archivo+Narrow:400,700);*/
 
-/*#banner {height:50px;}
-#banner .container {display:none; }
-#home #banner {height:438px; height:auto;}
-#home #banner .container {display:block;}*/
+#banner {height:50px;}
+#page-home #banner {height:438px; height:auto;}
 
 /* TEMP STYLES */
 #report-abuse {display:none;}
@@ -93,7 +91,7 @@ h2 {font-size:36px; line-height:36px; margin-bottom:30px;}
 h3 {font-size:24px; line-height:24px; margin-bottom:15px; padding-bottom:5px; color:#BB312B; border-bottom:1px solid #DBDBDB;}
 h4 {font-size:18px; line-height:18px;}
 h5 {font-size:11px; line-height:11px;}
-hr {height:1px; border:0; background:#CCC; margin:40px 0;}
+hr {height:1px; border:0; background:#CCC; margin:20px 0;}
 input,
 textarea,
 select {color:#0D2131; font:bold 13px "Archivo Narrow", san-serif; background:#F5F5F5; border:1px solid #DDD; padding:10px; border-radius:3px;}
@@ -137,7 +135,7 @@ table.stretch {width:100%; height:100%;}
 
 /* Content */
 #content {background:#FFF; padding:30px 0 50px 0;}
-#content h2 {margin-left:15px;}
+/*#content h2 {margin-left:15px;}*/
 #content .row {margin-bottom:20px;}
 #content .row.end {margin-bottom:50px;}
 #content img.padding {margin:0 20px 20px 0;}
@@ -149,8 +147,9 @@ table.stretch {width:100%; height:100%;}
 
 /* Sidebar */
 #content .sidebar {color:#0D3657; line-height:25px;}
-#content .sidebar h4 {margin:30px 0 20px 0; /*font-size:17px;*/}
+#content .sidebar h4 {margin:30px 0 10px 0; /*font-size:17px;*/}
 #content .sidebar h4.red {color:#BB312B;}
+#content .sidebar .payment-types img {padding:0;}
 #content .sidebar .fa-phone {position:relative; top:2px; font-size:15px;}
 #content .sidebar.brands a {padding:0;}
 #content .sidebar.brands img {width:100%; margin-bottom:10px; border-bottom: 1px solid #eee;}
@@ -222,50 +221,47 @@ table.stretch {width:100%; height:100%;}
 
 
 /* Home */
-#home #content {background:#FFF; padding-top:15px; padding-bottom:10px;}
-#home #content .img img {width:100%; height:100%; border:1px solid #FFF; box-shadow:0 0 20px 0 rgba(0, 0, 0, 0.5);}
-#home #content .text span {display:block; text-shadow:3px 3px 0 rgba(0, 0, 0, 0.20);}
-#home #content .text span.top {position:relative; z-index:3; color:#0063B3; font:62px "Blackjack", san-serif; letter-spacing: 2.3px;}
-#home #content .text span.bot {position:relative; top:-15px; z-index:2; color:#003865; font:bold 72px "Archivo Narrow", san-serif; text-transform:uppercase; letter-spacing:-5px;}
+#page-home #content {background:#FFF; padding-top:15px; padding-bottom:10px;}
+#page-home #content .img img {width:100%; height:100%; border:1px solid #FFF; box-shadow:0 0 20px 0 rgba(0, 0, 0, 0.5);}
+#page-home #content .text span {display:block; text-shadow:3px 3px 0 rgba(0, 0, 0, 0.20);}
+#page-home #content .text span.top {position:relative; z-index:3; color:#0063B3; font:62px "Blackjack", san-serif; letter-spacing: 2.3px;}
+#page-home #content .text span.bot {position:relative; top:-15px; z-index:2; color:#003865; font:bold 72px "Archivo Narrow", san-serif; text-transform:uppercase; letter-spacing:-5px;}
 
 /* About */
-#about #content .col-left h3 {float:left; width:460px;}
+#page-about #content .col-left h3 {float:left; width:460px;}
 
 /* Testimonials */
-#testimonials #content span {display:block;}
-#testimonials #content .intro {background:#CEDAE4; background:rgba(16, 76, 124, 0.2); padding:20px 40px; margin-bottom:30px;}
-#testimonials #content .box {padding:20px 40px 10px 40px; position:relative; background:#F5F5F5; margin-bottom:20px; border-top:1px solid #DBDBDB; border-bottom:1px solid #DBDBDB;}
-#testimonials #content .quote {padding-bottom:10px; font-style:italic;}
-#testimonials #content .client {color:#999;}
-#testimonials #content .quote:before,
-#testimonials #content .quote:after {position:absolute; color:#CCC; font-size:45px; font-family:Georgia, serif; font-weight:bold;}
-#testimonials #content .quote:before {content:"\201C"; left:7px; top:2px;}
-#testimonials #content .quote:after {content:"\201D"; right:15px; bottom:-17px;}
+#page-testimonials #content span {display:block;}
+#page-testimonials #content .intro {background:#CEDAE4; background:rgba(16, 76, 124, 0.2); padding:20px 40px; margin-bottom:30px;}
+#page-testimonials #content .box {padding:20px 40px 10px 40px; position:relative; background:#F5F5F5; margin-bottom:20px; border-top:1px solid #DBDBDB; border-bottom:1px solid #DBDBDB;}
+#page-testimonials #content .quote {padding-bottom:10px; font-style:italic;}
+#page-testimonials #content .client {color:#999;}
+#page-testimonials #content .quote:before,
+#page-testimonials #content .quote:after {position:absolute; color:#CCC; font-size:45px; font-family:Georgia, serif; font-weight:bold;}
+#page-testimonials #content .quote:before {content:"\201C"; left:7px; top:2px;}
+#page-testimonials #content .quote:after {content:"\201D"; right:15px; bottom:-17px;}
 
 /* Testimonials */
-#services #content .row {/*margin-bottom:20px;*/}
+#page-services #content .row {/*margin-bottom:20px;*/}
 
 /* Contact Us */
-#contact-us {}
-#contact-us .contact-form form {padding-right:150px;}
-#contact-us .contact-form label {display:block;}
-#contact-us .contact-form input[type=text],
-#contact-us .contact-form select,
-#contact-us .contact-form textarea {width:100%; margin-bottom:15px;}
-/*#contact-us .form-group {padding:0; margin:0;}*/
-#contact-us .form-group:nth-of-type(odd) {padding-right:10px; /*background:red;*/}
-#contact-us .form-group:nth-of-type(even) {padding-left:10px; /*background:lightblue;*/}
-#contact-us .city {}
-#contact-us .state {padding:0 10px;}
-#contact-us .zipcode {}
-#contact-us .sidebar hr {margin:20px 0;}
-#contact-us .sidebar h4 {margin-bottom:20px;}
-#contact-us .sidebar .payment-types img {padding:0;}
+#page-contact {}
+#page-contact .contact-form form {padding-right:150px;}
+#page-contact .contact-form label {display:block;}
+#page-contact .contact-form input[type=text],
+#page-contact .contact-form select,
+#page-contact .contact-form textarea {width:100%; margin-bottom:15px;}
+/*#page-contact .form-group {padding:0; margin:0;}*/
+#page-contact .form-group:nth-of-type(odd) {padding-right:10px; /*background:red;*/}
+#page-contact .form-group:nth-of-type(even) {padding-left:10px; /*background:lightblue;*/}
+#page-contact .city {}
+#page-contact .state {padding:0 10px;}
+#page-contact .zipcode {}
 
 /* Coupon */
-#coupon #content img.coupon {cursor:pointer;}
-#coupon #content h2 {margin-bottom:0;}
-#coupon #content h3 {margin-left:15px; border:0;}
+#page-coupon #content img.coupon {cursor:pointer;}
+#page-coupon #content h2 {margin-bottom:0;}
+#page-coupon #content h3 {margin-left:15px; border:0;}
 
 /*@media (max-width: 320px) {
 	.container {

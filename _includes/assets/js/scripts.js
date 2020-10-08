@@ -16,7 +16,7 @@ $(function () {
 		var os = "";
 	}
 
-	$("body").attr("id", pageStub).addClass(os); //no touchy!	
+	//$("body").attr("id", pageStub).addClass(os); //no touchy!	
 
 	//Active page link
 	$("#header .nav a").each(function() {

@@ -2,74 +2,51 @@
 <html lang="en">
 	{% include "components/head.njk" %}
 
-	<body {% if section %}class="page-{{ section }}"{% else %}class="page-home"{% endif %}>
+	<body {% if section %}id="page-{{ section }}"{% endif %}>
 
-
-
-		<header id="header" class="container">
-			<div class="row">
-				<div class="col-md-2 col-sm-2 col-xs-4 logo pull-left">
-					<a class="pull-left" href="/">
-						<img src="/_includes/assets/img/logo-spectrum.png" alt="Spectrum Air Conditioning and Heating" />
-					</a>
-				</div>
-				<div class="col-md-8 col-sm-8 col-xs-12 nav navbar-collapse collapse2">
-					{% include "components/nav.njk" %}
-				</div>
-				<div class="col-md-2 col-sm-2 col-xs-4 pull-right call">
-					Call Us Today
-					<span type="tel">225-775-1372</span>
-				</div>
-			</div>
-		</header>
-
-		<div id="banner" class="row">
-			<div class="banner-overlay1"></div>
-			<div class="banner-overlay2"></div>	
-			<div class="container">
-				<div class="slider">
-					<div id="outside">
-						<span id="prev">
-							<i class="fa fa-chevron-left"></i>
-						</span>
-						<div class="cycle-slideshow"
-							data-cycle-fx="fadeout"
-							data-cycle-speed=1500
-							data-cycle-timeout=4000	
-							data-cycle-pause-on-hover="true"
-							data-cycle-slides="> a"
-							data-cycle-prev="#prev"
-							data-cycle-next="#next"
-							data-cycle-caption-plugin=caption2
-							data-cycle-overlay-fx-sel=">div"
-							>
-							<!--<div class="cycle-overlay"></div>-->
-							{module_menu, version="2", menuId="1447683", moduleTemplateGroup="banners"}
-						</div>
-						<span id="next">
-							<i class="fa fa-chevron-right"></i>
-						</span>
+		<header>
+			<div id="header" class="container">
+				<div class="row">
+					<div class="col-md-2 col-sm-2 col-xs-4 logo pull-left">
+						<a class="pull-left" href="/">
+							<img src="/_includes/assets/img/logo-spectrum.png" alt="Spectrum Air Conditioning and Heating" />
+						</a>
+					</div>
+					<div class="col-md-8 col-sm-8 col-xs-12 nav navbar-collapse collapse2">
+						{% include "components/nav.njk" %}
+					</div>
+					<div class="col-md-2 col-sm-2 col-xs-4 pull-right call">
+						Call Us Today
+						<span type="tel">225-775-1372</span>
 					</div>
 				</div>
 			</div>
-		</div>
+			{% include "components/banner.njk" %}
+		</header>
 
-		<main class="content">
-			<div id="content" class="row">
+		<main>
+			<div id="content">
 				<div class="container">
-					{{ layoutContent | safe }}
+
+					<div class="row nomargin">
+						<div class="col-sm-8 col-left">
+							<h2>{{ title }}</h2>
+							{{ layoutContent | safe }}
+
+							{% if section == 'contact' %}
+								{% include "components/form-contact.njk" %}
+							{% endif %}
+						</div>	
+						<div class="col-sm-4 col-right">
+							{% include "components/sidebars.njk" %}
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</main>
 
-
 		{% include "components/footer.njk" %}
-
 
 	</body>
 </html>
-
-
-
-
-

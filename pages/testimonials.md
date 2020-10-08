@@ -8,4 +8,4 @@ eleventyNavigation:
   order: "4"
 
 ---
-test content - testimonials
+<div class="intro">At Spectrum Air Conditioning and Heating, we really value our customers and strive to make their experiance working with us the best we possibly can. Below are some of the wonderful things our customers had to say about us.</div>

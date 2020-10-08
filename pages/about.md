@@ -6,27 +6,18 @@ eleventyNavigation:
   key: About
   order: 1
 ---
-Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+<img src="/_includes/assets/uploads/content-about-air-conditioning-and-heating.jpg" width="250" height="150" align="left" class="padding pretty">
+<h3>About Spectrum AC &amp; Heating</h3>
+Spectrum Air Conditioning and Heating has been servicing the Greater Baton Rouge and surrounding areas since 1993. We pride ourselves on quality work and satisfied customers. At Spectrum, we don’t want you to be just another number; we want you to be part of our family. From our courteous office staff to our knowledgeable technicians, we offer a wide range of products and services to help with any home comfort issues you may have.
 
-Add a few line breaks in here to test:-
-Capitalize  
-on  
-low  
-hanging  
-fruit  
+<br><br>
 
-## Our services
-
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
-
-### Blue-sky thinking
-
-Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
-
-#### Management frameworks
-
-Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
-
-##### Regulatory convergence
-
-Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+<img src="http://placehold.it/250x150&text=family+photo" width="250" height="150" align="right" class="hide pretty padding right">
+<h3 style="width:100%;">About the Owner</h3>
+Hi, I am David, founder of Spectrum AC &amp; Heating.<br><br>
+Growing up with a father in this industry and having his own business, I was introduced early on to the field of air conditioning and heating. I was taught a work ethic - to work hard, and "do it right" the first time. This has been passed on to my children.<br><br>
+Since the start up of Spectrum some 30+ years ago, my employees carry out these same values, as well. We treat every customers needs with consideration, just as we would our own family... and every job as if it were our own home or business. Given the opportunity, I would like to prove this to you.<br><br>
+When the time comes that you need service, equipment installation, or even just a question you might have, please feel free to give me a call.<br><br>
+Thank you for taking the time to learn about us.<br><br>
+Sincerely,<br>
+David Thibodeaux

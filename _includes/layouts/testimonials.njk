@@ -2,12 +2,11 @@
 layout: layouts/base.njk
 section: testimonials
 ---
-
 {{ layoutContent | safe }}
 
-<h2>testimonials</h2>
-<ul>
 {%- for testimonial in collections.testimonials -%}
-  <li>{{ testimonial.data.title }} - {{ testimonial.url }} - {{ testimonial.data.body }}</li>
+	<div class="box">
+		<span class="quote">{{ testimonial.data.body }}</span>
+		<span class="client">{{ testimonial.data.title }}</span>
+	</div>
 {%- endfor -%}
-</ul>

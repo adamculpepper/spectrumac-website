@@ -6,4 +6,5 @@ eleventyNavigation:
   key: Coupon
   order: 7
 ---
-coupon content here2
+<h3>Click on the coupon below to print</h3>
+<img src="/images/spectrum-coupon.png" class="full pretty coupon" onClick="printme(event)">
