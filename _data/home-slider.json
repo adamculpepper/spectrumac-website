@@ -1,8 +1,8 @@
 {
   "slide": [
     {
-      "title": "Banner1",
-      "link": "/about",
+      "title": "Banner 1",
+      "link": "/services",
       "caption": "test caption 1",
       "image": "",
       "enabled": true
