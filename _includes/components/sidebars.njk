@@ -4,25 +4,29 @@
 {% set zipcode = metadata.company_info.physical_address.zipcode %}
 
 <div class="sidebar">
-	<a href="https://goo.gl/maps/bmlJt" target="_blank">
-		<img src="/_includes/assets/uploads/map-spectrum-air-conditioning.jpg" width="350" height="200">
-	</a>
-	<h4 class="red">
-		{{ metadata.company_info.company_name }}
-	</h4>
-	{{ address1 }}<br>
-	{{ city }}, {{ state }} {{ zipcode }}<br>
-	<i class="fa fa-phone"></i> {{ metadata.company_info.phone_number }}
+	{% if sidebar == 'map' %}
+		<a href="https://goo.gl/maps/bmlJt" target="_blank">
+			<img src="/_includes/assets/uploads/map-spectrum-air-conditioning.jpg" width="350" height="200">
+		</a>
+		<h4 class="red">
+			{{ metadata.company_info.company_name }}
+		</h4>
+		{{ address1 }}<br>
+		{{ city }}, {{ state }} {{ zipcode }}<br>
+		<i class="fa fa-phone"></i> {{ metadata.company_info.phone_number }}
 
-	{% if section == 'contact' %}
-	<hr>
+		{% if section == 'contact' %}
+		<hr>
 
-	<div class="payment-types">
-		<h4>Accepted Payment Options</h4>
-		<img class="col-xs-3" src="/_includes/assets/uploads/logo-card-discover.jpg">
-		<img class="col-xs-3" src="/_includes/assets/uploads/logo-card-visa.jpg">
-		<img class="col-xs-3" src="/_includes/assets/uploads/logo-card-master-card.jpg">
-		<img class="col-xs-3" src="/_includes/assets/uploads/logo-card-american-express.jpg">
-	</div>
+		<div class="payment-types">
+			<h4>Accepted Payment Options</h4>
+			<img class="col-xs-3" src="/_includes/assets/uploads/logo-card-discover.jpg">
+			<img class="col-xs-3" src="/_includes/assets/uploads/logo-card-visa.jpg">
+			<img class="col-xs-3" src="/_includes/assets/uploads/logo-card-master-card.jpg">
+			<img class="col-xs-3" src="/_includes/assets/uploads/logo-card-american-express.jpg">
+		</div>
+		{% endif %}
+	{% elseif sidebar == 'systems' %}
+		systems
 	{% endif %}
 </div>

@@ -5,44 +5,19 @@ section: services
 
 {{ layoutContent | safe }}
 
-
-
-
-<h2>snippets</h2>
-
-
-
-
-
-
-
-
-
-
-{{ metadata.company_info.company_name }}<br>
-{{ metadata.company_info.phone_number }}<br>
-{{ metadata.company_info.physical_address.address1 }}<br>
-{{ metadata.company_info.physical_address.city }}<br>
-{{ metadata.company_info.physical_address.state }}<br>
-{{ metadata.company_info.physical_address.zipcode }}<br>
-
-
-
-
-
-<h2>services</h2>
-<ul>
+<h3>Services List</h3>
 {%- for service in collections.services -%}
-  <li>{{ service.data.title }} - {{ service.url }} - {{ service.data.body }}</li>
+	<div class="mb-3">
+		<h4>{{ service.data.title }}</h4>
+		{{ service.data.body }}
+	</div>
 {%- endfor -%}
-</ul>
 
 
-<h2>products</h2>
-<ul>
+<h3>Products</h3>
 {%- for product in collections.products -%}
-  <li>{{ product.data.title }} - {{ product.url }} - {{ product.data.body }}</li>
+	<div class="mb-3">
+		<h4>{{ product.data.title }}</h4>
+		{{ product.data.body }}
+	</div>
 {%- endfor -%}
-</ul>
-
-

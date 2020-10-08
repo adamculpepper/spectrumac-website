@@ -2,8 +2,15 @@
 <html lang="en">
 	{% include "components/head.njk" %}
 
-	<body {% if section %}id="page-{{ section }}"{% endif %}>
+	{% set pageSlug %}
+		{% if permalink == '/' %}
+			page-home
+		{% else %}
+			page-{{permalink | replace("index.html", "") | slug}}
+		{% endif %}
+	{% endset %}
 
+	<body id="{{ pageSlug | trim}}">
 		<header>
 			<div id="header" class="container">
 				<div class="row">
@@ -29,17 +36,29 @@
 				<div class="container">
 
 					<div class="row nomargin">
-						<div class="col-sm-8 col-left">
-							<h2>{{ title }}</h2>
-							{{ layoutContent | safe }}
-
-							{% if section == 'contact' %}
-								{% include "components/form-contact.njk" %}
+						<div class="col-sm-12">
+							{% if section != 'home' %}
+								<h2>{{ title }}</h2>
+								{% if subtitle %}
+									<h3>{{ subtitle }}</h3>
+								{% endif %}
 							{% endif %}
-						</div>	
-						<div class="col-sm-4 col-right">
-							{% include "components/sidebars.njk" %}
 						</div>
+						
+							<div class="col-sm-{% if sidebar %}8 col-left{% else %}12{% endif %}">
+								{{ layoutContent | safe }}
+
+								{% if section == 'contact' %}
+									{% include "components/form-contact.njk" %}
+								{% endif %}
+							</div>
+
+							{% if sidebar %}
+							<div class="col-sm-4 col-right">
+								{% include "components/sidebars.njk" %}
+							</div>
+							{% endif %}
+						
 					</div>
 
 				</div>

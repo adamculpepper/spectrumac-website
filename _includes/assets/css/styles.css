@@ -244,6 +244,13 @@ table.stretch {width:100%; height:100%;}
 /* Testimonials */
 #page-services #content .row {/*margin-bottom:20px;*/}
 
+/* FAQs */
+#page-services #content .row {/*margin-bottom:20px;*/}
+#page-faqs ul {list-style-type:decimal; padding:0; list-style-position:inside;}
+#page-faqs ul li {font-weight:bold;}
+#page-faqs ul ul {list-style-type:lower-alpha; margin-bottom:20px; padding-left:20px;}
+#page-faqs ul ul li {font-weight:normal;}
+
 /* Contact Us */
 #page-contact {}
 #page-contact .contact-form form {padding-right:150px;}
@@ -261,7 +268,7 @@ table.stretch {width:100%; height:100%;}
 /* Coupon */
 #page-coupon #content img.coupon {cursor:pointer;}
 #page-coupon #content h2 {margin-bottom:0;}
-#page-coupon #content h3 {margin-left:15px; border:0;}
+#page-coupon #content h3 {/*margin-left:15px;*/ border:0;}
 
 /*@media (max-width: 320px) {
 	.container {
