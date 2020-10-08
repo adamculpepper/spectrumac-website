@@ -8,8 +8,8 @@
       "enabled": true
     },
     {
-      "title": "Banner2",
-      "link": "/testimonials",
+      "title": "Banner 2 - Services",
+      "link": "/services",
       "caption": "caption2",
       "image": "",
       "enabled": true
