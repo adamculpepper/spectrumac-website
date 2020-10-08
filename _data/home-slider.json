@@ -13,6 +13,41 @@
       "caption": "caption2",
       "image": "/_includes/assets/uploads/banner2.png",
       "enabled": true
+    },
+    {
+      "enabled": true,
+      "title": "Banner 3",
+      "link": "",
+      "caption": "",
+      "image": "/_includes/assets/uploads/banner3.png"
+    },
+    {
+      "enabled": false,
+      "title": "",
+      "link": "",
+      "caption": "",
+      "image": ""
+    },
+    {
+      "enabled": false,
+      "title": "",
+      "link": "",
+      "caption": "",
+      "image": ""
+    },
+    {
+      "enabled": false,
+      "title": "",
+      "link": "",
+      "caption": "",
+      "image": ""
+    },
+    {
+      "enabled": false,
+      "title": "",
+      "link": "",
+      "caption": "",
+      "image": ""
     }
   ]
 }
