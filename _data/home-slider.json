@@ -4,7 +4,7 @@
       "title": "Banner 1",
       "link": "/services",
       "caption": "test caption 1",
-      "image": "",
+      "image": "/_includes/assets/uploads/banner1.png",
       "enabled": true
     },
     {
