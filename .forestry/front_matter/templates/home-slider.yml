@@ -1,4 +1,32 @@
 ---
 label: Home Slider
 hide_body: true
-fields: []
+fields:
+- name: slide
+  type: field_group_list
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: link
+    type: text
+    config:
+      required: false
+    label: Link
+  - name: caption
+    type: text
+    config:
+      required: false
+    label: Caption
+  - name: image
+    type: file
+    config:
+      maxSize: 64
+    label: Image
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Slide
