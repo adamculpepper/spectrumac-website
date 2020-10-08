@@ -1,5 +1,5 @@
 ---
-label: Snippets
+label: Metadata
 hide_body: true
 fields:
 - name: company_info
@@ -71,6 +71,11 @@ fields:
         schema:
           format: markdown
       label: Text
+    - name: link
+      type: text
+      config:
+        required: false
+      label: Link
     label: Block 1
   - name: block_2
     type: field_group
@@ -90,6 +95,11 @@ fields:
         schema:
           format: markdown
       label: Text
+    - name: link
+      type: text
+      config:
+        required: false
+      label: Link
     label: Block 2
   label: Footer
 - name: social_media
