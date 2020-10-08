@@ -43,11 +43,11 @@
       "image": "/_includes/assets/uploads/slide-solar.jpg"
     },
     {
-      "enabled": false,
-      "title": "",
-      "link": "",
+      "enabled": true,
+      "title": "Banner 7 - Mitsubishi",
+      "link": "/services",
       "caption": "",
-      "image": ""
+      "image": "/_includes/assets/uploads/slide-mitsubishi.jpg"
     }
   ]
 }
