@@ -4,6 +4,10 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: document
+  path: _data/home-slider.json
+  label: Home Slider
+  match: "**/*"
 - type: directory
   path: pages
   label: Pages
