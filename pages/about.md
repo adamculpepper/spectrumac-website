@@ -7,7 +7,7 @@ eleventyNavigation:
   key: About
   order: 1
 ---
-<img src="/_includes/assets/uploads/content-about-air-conditioning-and-heating.jpg" width="250" height="150" align="left" class="padding pretty">
+<img src="/_includes/assets/uploads/content-about-air-conditioning-and-heating.jpg" width="250" height="150" class="padding pretty float-md-left">
 <h3>About Spectrum AC &amp; Heating</h3>
 Spectrum Air Conditioning and Heating has been servicing the Greater Baton Rouge and surrounding areas since 1993. We pride ourselves on quality work and satisfied customers. At Spectrum, we don’t want you to be just another number; we want you to be part of our family. From our courteous office staff to our knowledgeable technicians, we offer a wide range of products and services to help with any home comfort issues you may have.
 

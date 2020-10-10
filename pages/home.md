@@ -8,11 +8,11 @@ eleventyNavigation:
   order: 0
 ---
 <div class="row">
-	<div class="col-sm-4 img">
-		<img src="/_includes/assets/uploads/content-home-spectrum-ac-and-heating.jpg">
+	<div class="col-lg-4">
+		<img src="/_includes/assets/uploads/content-home-spectrum-ac-and-heating.jpg" class="img-fluid pretty">
 	</div>
-	<div class="col-sm-8 text">
-		<span class="top">Let Our Family</span>
-		<span class="bot">Take care of yours!</span>
+	<div class="col-lg-8 mt-3 mt-lg-0">
+		<div class="text1">Let Our Family</div>
+		<div class="text2">Take care of yours!</div>
 	</div>
 </div>

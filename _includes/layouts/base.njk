@@ -12,6 +12,59 @@
 
 	<body id="{{ pageSlug | trim}}">
 		<header>
+
+
+
+
+
+
+<style>
+.navbar-brand img {max-width:190px;}
+</style>
+
+
+
+    <div class="navbar-container">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg p-0">
+				<a class="navbar-brand" href="index.html">
+					<img src="/_includes/assets/img/logo-spectrum.png" alt="{{ metadata.company_info.company_name }}" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fa fa-bars" aria-hidden="true"></i>
+				</button>
+				<div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+
+					{% include "components/nav.njk" %}
+
+
+
+					<div class="navbar-nav">
+						<div class="call-block">
+							Call Us Today
+							<span type="tel">{{ metadata.company_info.phone_number }}</span>
+						</div>
+						<div class="nav-item d-flex align-items-center">
+							<a href="" class="btn btn-success">button</a>
+						</div>
+					</div>
+
+				</div>
+				<!--end nav collapse-->
+			</nav>
+		</div>
+		<!--end of container-->
+    </div>
+
+
+
+
+
+
+
+
+
+
 			<div id="header" class="container">
 				<div class="row">
 					<div class="col-md-2 col-sm-2 col-xs-4 logo pull-left">
@@ -35,7 +88,7 @@
 			<div id="content">
 				<div class="container">
 
-					<div class="row nomargin">
+					<div class="row">
 						<div class="col-sm-12">
 							{% if section != 'home' %}
 								<h2>{{ title }}</h2>
@@ -45,19 +98,19 @@
 							{% endif %}
 						</div>
 						
-							<div class="col-sm-{% if sidebar %}8 col-left{% else %}12{% endif %}">
-								{{ layoutContent | safe }}
+						<div class="col-lg-{% if sidebar %}8 border-right{% else %}12{% endif %}">
+							{{ layoutContent | safe }}
 
-								{% if section == 'contact' %}
-									{% include "components/form-contact.njk" %}
-								{% endif %}
-							</div>
-
-							{% if sidebar %}
-							<div class="col-sm-4 col-right">
-								{% include "components/sidebars.njk" %}
-							</div>
+							{% if section == 'contact' %}
+								{% include "components/form-contact.njk" %}
 							{% endif %}
+						</div>
+
+						{% if sidebar %}
+						<div class="col-lg-4 mt-5 mt-lg-0">
+							{% include "components/sidebars.njk" %}
+						</div>
+						{% endif %}
 						
 					</div>
 

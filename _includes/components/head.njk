@@ -3,12 +3,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{{ title or renderData.title or metadata.title }}</title>
 	{% set css %}
-		{% include "assets/css/bootstrap.min.css" %}
-		{% include "assets/css/font-awesome.css" %}
-		{% include "assets/css/jquery.cycle2.css" %}
-		{% include "assets/css/styles.css" %}
+
 	{% endset %}
 	<style>{{ css | cssmin | safe }}</style>
+
+	<link rel="stylesheet" type="text/css" href="/_includes/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/_includes/assets/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="/_includes/assets/css/jquery.cycle2.css">
+	<link rel="stylesheet" type="text/css" href="/_includes/assets/css/styles.css">
 
 	{% set js %}
 		{% include "assets/js/jquery.min.js" %}
