@@ -13,74 +13,36 @@
 	<body id="{{ pageSlug | trim}}">
 		<header>
 
-
-
-
-
-
-<style>
-.navbar-brand img {max-width:190px;}
-</style>
-
-
-
-    <div class="navbar-container">
-		<div class="container">
-			<nav class="navbar navbar-expand-lg p-0">
-				<a class="navbar-brand" href="index.html">
-					<img src="/_includes/assets/img/logo-spectrum.png" alt="{{ metadata.company_info.company_name }}" />
-				</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<i class="fa fa-bars" aria-hidden="true"></i>
-				</button>
-				<div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-
-					{% include "components/nav.njk" %}
-
-
-
-					<div class="navbar-nav">
-						<div class="call-block">
-							Call Us Today
-							<span type="tel">{{ metadata.company_info.phone_number }}</span>
-						</div>
-						<div class="nav-item d-flex align-items-center">
-							<a href="" class="btn btn-success">button</a>
-						</div>
-					</div>
-
-				</div>
-				<!--end nav collapse-->
-			</nav>
-		</div>
-		<!--end of container-->
-    </div>
-
-
-
-
-
-
-
-
-
-
-			<div id="header" class="container">
-				<div class="row">
-					<div class="col-md-2 col-sm-2 col-xs-4 logo pull-left">
-						<a class="pull-left" href="/">
-							<img src="/_includes/assets/img/logo-spectrum.png" alt="Spectrum Air Conditioning and Heating" />
+			<div class="navbar-container my-3">
+				<div class="container p-0">
+					<nav class="navbar navbar-expand-lg">
+						<a class="navbar-brand p-0" href="index.html">
+							<img src="/_includes/assets/img/logo-spectrum.png" alt="{{ metadata.company_info.company_name }}" />
 						</a>
-					</div>
-					<div class="col-md-8 col-sm-8 col-xs-12 nav navbar-collapse collapse2">
-						{% include "components/nav.njk" %}
-					</div>
-					<div class="col-md-2 col-sm-2 col-xs-4 pull-right call">
-						Call Us Today
-						<span type="tel">225-775-1372</span>
-					</div>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							<i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+						</button>
+						<div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+							{% include "components/nav.njk" %}
+
+							<div class="navbar-nav">
+								<div class="call-block">
+									<a href="tel:{{ metadata.company_info.phone_number }}">
+										<div class="hidden-lg-down">
+											<div class="text">Call Us Today</div>
+											<div class="number">{{ metadata.company_info.phone_number }}</div>
+										</div>
+										<div class="hidden-xl-up">
+											<div class="text text-danger">Call Us Today <i class="fa fa-phone" aria-hidden="true"></i></div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</nav>
 				</div>
-			</div>
+		    </div>
+
 			{% include "components/banner.njk" %}
 		</header>
 

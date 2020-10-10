@@ -107,19 +107,31 @@ body {background:url(/_includes/assets/img/bg-body.jpg) no-repeat top center; ba
 .cycle-slideshow {margin:0;}
 
 /* Header */
-#header {position:relative;}
-header .call-block {float:right; padding:10px; color:#BB312B; font:bold 21px "Blackjack", san-serif; line-height:21px; text-shadow:1px 1px 0 rgba(0, 0, 0, 0.25);}
-header .call-block {background:#1D4C73; background:rgba(255, 255, 255, 0.10); box-shadow:-1px -1px 0 0 rgba(255, 255, 255, 0.20), 1px 1px 0 0 rgba(0, 0, 0, 0.20); border-radius:5px;}
-header .call-block span {display:block; color:#FFF; font:bold 27px "Archivo Narrow", san-serif; line-height:28px; text-shadow:5px 5px 5px rgba(0, 0, 0, 0.15);}
-#header .logo {padding:0;}
+/*#header {position:relative;}*/
+header .call-block {
+	padding:10px;
+	/*line-height:21px;*/
+	text-shadow:1px 1px 0 rgba(0, 0, 0, 0.25);
+	background:#1D4C73;
+	background:rgba(255, 255, 255, 0.10);
+	box-shadow:
+		-1px -1px 0 0 rgba(255, 255, 255, 0.20),
+		1px 1px 0 0 rgba(0, 0, 0, 0.20);
+	border-radius:5px;	
+}
+header .call-block .text {font:bold 21px "Blackjack", san-serif; color:#BB312B;}
+header .call-block .number {color:#FFF; font:bold 27px "Archivo Narrow", san-serif; /*line-height:28px;*/ text-shadow:5px 5px 5px rgba(0, 0, 0, 0.15);}
+/*#header .logo {padding:0;}
 #header .logo a {display:block; width:100%;}
-#header .logo a img {width:100%; margin-top:27px;}
-#header .nav {margin:80px 0 0 8px; padding:0;}
-#header .nav ul {background:none; position:relative; padding:0; border:0; list-style:none;}
-#header .nav li a {padding:15px 20px; color:#96C0E2; font:bold 18px "Archivo Narrow", san-serif; text-shadow:2px 2px 0 rgba(0, 0, 0, 0.30); box-shadow:1px 0 0 0 rgba(255, 255, 255, 0.20), 2px 0 0 rgba(0, 0, 0, 0.25); text-transform:uppercase;}
-#header .nav li:first-child a {}
-#header .nav li a:hover {background:none; box-shadow:none; border:0; color:#FFF; outline:1px solid #000; border-bottom:2px solid #B32F29; -webkit-box-shadow:inset 0 0 25px 0 rgba(0, 0, 0, 0.40); box-shadow:inset 0 0 25px 0 rgba(0, 0, 0, 0.40);}
-#header .nav li a.active {color:#FFF!important;}
+#header .logo a img {width:100%; margin-top:27px;}*/
+/*header nav {margin:80px 0 0 8px; padding:0;}*/
+header nav ul {background:none; position:relative; padding:0; border:0; list-style:none;}
+header nav li a {display:block; padding:15px; color:#96C0E2; font:bold 13px "Archivo Narrow", san-serif; text-shadow:2px 2px 0 rgba(0, 0, 0, 0.30); box-shadow:1px 0 0 0 rgba(255, 255, 255, 0.20), 2px 0 0 rgba(0, 0, 0, 0.25); text-transform:uppercase;}
+header nav li:first-child a {}
+header nav li a:hover {background:none; box-shadow:none; border:0; color:#FFF; outline:1px solid #000; border-bottom:2px solid #B32F29; -webkit-box-shadow:inset 0 0 25px 0 rgba(0, 0, 0, 0.40); box-shadow:inset 0 0 25px 0 rgba(0, 0, 0, 0.40);}
+header nav li a.active {color:#FFF!important;}
+header nav .navbar-toggler {color:#fff;}
+header nav .navbar-brand img {max-width:180px;}
 
 /* Banner */
 #banner {position:relative;}
@@ -261,6 +273,31 @@ header .call-block span {display:block; color:#FFF; font:bold 27px "Archivo Narr
 #page-coupon #content img.coupon {cursor:pointer;}
 #page-coupon #content h2 {margin-bottom:0;}
 #page-coupon #content h3 {/*margin-left:15px;*/ border:0;}
+
+
+
+
+
+
+
+
+
+/* Add-on: Bootstrap 4, hidden-{breakpoint}-{up/down} */
+/* taken from Bootstrap 4, alpha 6 */
+.hidden-xs-up {display:none!important;}
+@media (max-width:575px)	{ .hidden-xs-down	{display:none!important;} }
+@media (min-width:576px)	{ .hidden-sm-up		{display:none!important;} }
+@media (max-width:767px)	{ .hidden-sm-down	{display:none!important;} }
+@media (min-width:768px)	{ .hidden-md-up		{display:none!important;} }
+@media (max-width:991px)	{ .hidden-md-down	{display:none!important;} }
+@media (min-width:992px)	{ .hidden-lg-up		{display:none!important;} }
+@media (max-width:1199px)	{ .hidden-lg-down	{display:none!important;} }
+@media (min-width:1200px)	{ .hidden-xl-up		{display:none!important;} }
+.hidden-xl-down {display:none!important;}
+
+
+
+
 
 /*@media (max-width: 320px) {
 	.container {
@@ -424,10 +461,16 @@ and (-webkit-min-device-pixel-ratio: 1)  {
 
 /* Large (lg) and up */
 @media (min-width:992px) {
+	header nav li a {display:inline-block;}
+
 	#footer1 .form {margin-top:-10px;}
 }
 
+
 /* Extra Large (xl) and up */
 @media (min-width:1200px) {
+	header nav li a {font-size:15px; padding:15px 20px;}
 
+	header .call-block {font-size:21px;}
+	header .call-block span {font-size:27px;}
 }
