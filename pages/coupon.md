@@ -8,4 +8,4 @@ eleventyNavigation:
   key: Coupon
   order: 7
 ---
-<img src="/_includes/assets/uploads/spectrum-coupon.png" class="full pretty coupon" onClick="printme(event)">
+<img src="/_includes/assets/uploads/spectrum-coupon.png" class="img-fluid pretty coupon" onClick="printme(event)">

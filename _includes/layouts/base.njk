@@ -62,7 +62,7 @@
 							{% endif %}
 						</div>
 						
-						<div class="col-lg-{% if sidebar %}8 border-right{% else %}12{% endif %}">
+						<div class="col-lg-{% if sidebar %}8{% else %}12{% endif %}">
 							{{ layoutContent | safe }}
 
 							{% if section == 'contact' %}
@@ -71,7 +71,7 @@
 						</div>
 
 						{% if sidebar %}
-						<div class="col-lg-4 mt-5 mt-lg-0">
+						<div class="sidebar col-lg-4 mt-5 mt-lg-0">
 							{% include "components/sidebars.njk" %}
 						</div>
 						{% endif %}

@@ -3,49 +3,41 @@
 {% set state = metadata.company_info.physical_address.state %}
 {% set zipcode = metadata.company_info.physical_address.zipcode %}
 
-<div class="sidebar">
-	{% if sidebar == 'map' %}
-		<h3>Location</h3>
-		<a href="https://goo.gl/maps/bmlJt" target="_blank">
-			<img src="/_includes/assets/uploads/map-spectrum-air-conditioning.jpg" class="img-fluid">
-		</a>
-		<h4 class="text-danger">
-			{{ metadata.company_info.company_name }}
-		</h4>
-		{{ address1 }}<br>
-		{{ city }}, {{ state }} {{ zipcode }}<br>
-		<i class="fa fa-phone"></i> {{ metadata.company_info.phone_number }}
+{% if sidebar == 'map' %}
+	<h3>Location</h3>
+	<a href="https://goo.gl/maps/bmlJt" target="_blank">
+		<img src="/_includes/assets/uploads/map-spectrum-air-conditioning.jpg" class="img-fluid">
+	</a>
+	<h4 class="text-danger">
+		{{ metadata.company_info.company_name }}
+	</h4>
+	{{ address1 }}<br>
+	{{ city }}, {{ state }} {{ zipcode }}<br>
+	<i class="fa fa-phone"></i> {{ metadata.company_info.phone_number }}
 
-		{% if section == 'contact' %}
+	{% if section == 'contact' %}
 		<hr>
 
-		<div class="payment-types">
-			<h4>Accepted Payment Options</h4>
-			<img class="col-xs-3" src="/_includes/assets/uploads/logo-card-discover.jpg">
-			<img class="col-xs-3" src="/_includes/assets/uploads/logo-card-visa.jpg">
-			<img class="col-xs-3" src="/_includes/assets/uploads/logo-card-master-card.jpg">
-			<img class="col-xs-3" src="/_includes/assets/uploads/logo-card-american-express.jpg">
-		</div>
-		{% endif %}
-	{% elseif sidebar == 'systems' %}
-
-
-
-
-
+		<h4>Accepted Payment Options</h4>
 		<div class="row">
-			<div class="col-12">
-				<h3>We Service All<br>Makes and Models</h3>
-				<h4 class="mt-0">Air Conditioning Systems</h4>
-			</div>
-			{%- for system in ac_systems.systems -%}
-			<div class="col-sm-6">
-				<a href="{{ system.link }}" target="_blank">
-					<img src="{{ system.image }}" alt="{{ system.title }}">
-				</a>
-			</div>
-			{%- endfor -%}
+			<img class="col-6 col-sm-3 mb-4 mb-sm-0 p-0" src="/_includes/assets/uploads/logo-card-discover.jpg">
+			<img class="col-6 col-sm-3 mb-4 mb-sm-0 p-0" src="/_includes/assets/uploads/logo-card-visa.jpg">
+			<img class="col-6 col-sm-3 mb-4 mb-sm-0 p-0" src="/_includes/assets/uploads/logo-card-master-card.jpg">
+			<img class="col-6 col-sm-3 mb-4 mb-sm-0 p-0" src="/_includes/assets/uploads/logo-card-american-express.jpg">
 		</div>
-
 	{% endif %}
-</div>
+{% elseif sidebar == 'systems' %}
+	<div class="row">
+		<div class="col-12">
+			<h3>We Service All<br>Makes and Models</h3>
+			<h4 class="mt-0">Air Conditioning Systems</h4>
+		</div>
+		{%- for system in ac_systems.systems -%}
+		<div class="col-6 col-sm-4 col-lg-6">
+			<a href="{{ system.link }}" target="_blank">
+				<img src="{{ system.image }}" alt="{{ system.title }}" class="img-fluid">
+			</a>
+		</div>
+		{%- endfor -%}
+	</div>
+{% endif %}
