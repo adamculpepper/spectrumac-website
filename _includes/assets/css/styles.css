@@ -138,9 +138,10 @@ header nav .navbar-toggler {color:#fff;}
 header nav .navbar-toggler + .navbar-collapse {color:#f0f; background:rgba(0, 56, 101, 0.70); backdrop-filter:blur(5px);}
 
 
-body.scrolled .fixed-top {background:rgba(0, 56, 101, 0.70); backdrop-filter:blur(5px);}
-body.scrolled header navbar-container {min-height:122px;}
-body.scrolled header .navbar-brand img {max-height:90px;}
+body.scrolled .fixed-top {background:rgba(0, 56, 101, 0.80); backdrop-filter:blur(5px);}
+body.scrolled header .navbar-container {min-height:122px;}
+body.scrolled header .navbar-brand img {max-height:80px;}
+body.scrolled header nav .navbar-toggler + .navbar-collapse {background:none; backdrop-filter:none;}
 
 /* Banner */
 #banner {position:relative;}
@@ -448,7 +449,7 @@ and (-webkit-min-device-pixel-ratio: 1)  {
 
 
 
-body.scrolled header nav .navbar-toggler + .navbar-collapse {background:none; backdrop-filter:none}
+
 
 
 
