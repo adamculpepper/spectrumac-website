@@ -10,6 +10,11 @@ fields:
     config:
       required: false
     label: Title
+  - name: link
+    type: text
+    config:
+      required: false
+    label: Link
   - name: image
     type: file
     config:
