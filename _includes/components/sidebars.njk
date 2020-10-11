@@ -28,6 +28,22 @@
 		</div>
 		{% endif %}
 	{% elseif sidebar == 'systems' %}
-		systems
+
+
+
+
+
+		<div class="row">
+			<div class="col-12">
+				<h3>We Service All<br>Makes and Models</h3>
+				<h4 class="mt-0">Air Conditioning Systems</h4>
+			</div>
+			{%- for system in ac_systems.systems -%}
+			<div class="col-sm-6">
+				<img src="{{ system.image }}" alt="{{ system.title }}">
+			</div>
+			{%- endfor -%}
+		</div>
+
 	{% endif %}
 </div>
