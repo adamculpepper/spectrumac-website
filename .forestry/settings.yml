@@ -45,7 +45,7 @@ sections:
   templates:
   - faq
 - type: document
-  path: _data/home-slides.json
+  path: _data/home_slides.json
   label: Home Slides
 - type: document
   path: _data/metadata.json
