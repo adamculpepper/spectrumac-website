@@ -2,43 +2,53 @@
   "systems": [
     {
       "title": "Carrier",
-      "image": "/_includes/assets/uploads/logo-brand-carrier.jpg"
+      "image": "/_includes/assets/uploads/logo-brand-carrier.jpg",
+      "link": "http://carrier.com"
     },
     {
       "title": "Goodman",
-      "image": "/_includes/assets/uploads/logo-brand-goodman.jpg"
+      "image": "/_includes/assets/uploads/logo-brand-goodman.jpg",
+      "link": ""
     },
     {
       "title": "American Standard",
-      "image": "/_includes/assets/uploads/logo-brand-american-standard.JPG"
+      "image": "/_includes/assets/uploads/logo-brand-american-standard.JPG",
+      "link": ""
     },
     {
       "title": "",
-      "image": ""
+      "image": "",
+      "link": ""
     },
     {
       "title": "",
-      "image": ""
+      "image": "",
+      "link": ""
     },
     {
       "title": "",
-      "image": ""
+      "image": "",
+      "link": ""
     },
     {
       "title": "",
-      "image": ""
+      "image": "",
+      "link": ""
     },
     {
       "title": "",
-      "image": ""
+      "image": "",
+      "link": ""
     },
     {
       "title": "",
-      "image": ""
+      "image": "",
+      "link": ""
     },
     {
       "title": "",
-      "image": ""
+      "image": "",
+      "link": ""
     }
   ]
 }
