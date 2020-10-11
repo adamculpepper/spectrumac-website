@@ -29,20 +29,17 @@
 	</div>
 	<div id="footer2">
 		<div class="container">
-			<div class="row">
-				<div class="col-sm-4 copyright">&copy; Copyright 2020 <a href="/">{{ metadata.company_info.company_name }}</a></div>
-				<div class="col-sm-4 address ml-auto">
-					<div class="pull-right">
-						<div class="info">
-							{{ address1 }} {{ city }}, {{ state }} {{ zipcode }}
-							<span class="dot"></span>
-							<span type="tel">{{ metadata.company_info.phone_number }}</span>
-						</div>
-						<div class="social">
-							<a target="social" class="fa fa-facebook-square" href="{{ metadata.social_media.facebook_url }}"></a>
-							<a target="social" class="fa fa-twitter-square" href="{{ metadata.social_media.twitter_url }}"></a>
-							<a target="social" class="hide fa fa-youtube-square" href="#"></a>
-						</div>
+			<div class="d-md-flex">
+				<div class="copyright">&copy; Copyright 2020 <a href="/">{{ metadata.company_info.company_name }}</a></div>
+				<div class="address ml-auto flex-center-v">
+					<div class="info d-inline-block">
+						{{ address1 }} {{ city }}, {{ state }} {{ zipcode }}
+						<span class="dot"></span>
+						<span type="tel">{{ metadata.company_info.phone_number }}</span>
+					</div>
+					<div class="social ml-3 d-inline-block">
+						<a target="social" class="fa fa-2x fa-facebook-square" href="{{ metadata.social_media.facebook_url }}"></a>
+						<a target="social" class="fa fa-2x fa-twitter-square" href="{{ metadata.social_media.twitter_url }}"></a>
 					</div>
 				</div>
 			</div>

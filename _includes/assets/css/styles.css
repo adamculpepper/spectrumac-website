@@ -79,9 +79,15 @@ td, th {padding:0;}
 ::-moz-placeholder {color:#487395;}
 .hide {display:none;}
 .borderless {box-shadow:none!important;}
-.nopadding {padding:0;}
-.no-padding {padding:0;} /* find duplicates and merge */
-.nomargin {margin:0;}
+.flex-center {display:flex; align-items:center; justify-content:center;}
+.flex-center-v {display:flex; align-items:center;}
+.flex-center-h {display:flex; justify-content:center;}
+.overflow {overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+.red {background:lightsalmon!important;}
+.blue {background:lightblue!important;}
+.yellow {background:lightyellow!important;}
+.green {background:lightgreen!important;}
+
 img.full {width:100%;}
 img.pretty {border:2px solid #FFF; box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.5);}
 
@@ -128,14 +134,13 @@ header .call-block .number {color:#FFF; font:bold 27px "Archivo Narrow", san-ser
 /*header nav {margin:80px 0 0 8px; padding:0;}*/
 header nav ul {background:none; position:relative; padding:0; border:0; list-style:none;}
 header nav li a {display:block; padding:15px; color:#96C0E2; font:bold 13px "Archivo Narrow", san-serif; text-shadow:2px 2px 0 rgba(0, 0, 0, 0.30); box-shadow:1px 0 0 0 rgba(255, 255, 255, 0.20), 2px 0 0 rgba(0, 0, 0, 0.25); text-transform:uppercase;}
-header nav li:first-child a {}
 header nav li a:hover {background:none; box-shadow:none; border:0; color:#FFF; outline:1px solid #000; border-bottom:2px solid #B32F29; -webkit-box-shadow:inset 0 0 25px 0 rgba(0, 0, 0, 0.40); box-shadow:inset 0 0 25px 0 rgba(0, 0, 0, 0.40);}
 header nav li a.active {color:#FFF!important;}
 header nav .navbar-brand img {max-height:120px; transition:max-height 200ms linear;}
 header nav .navbar-toggler {color:#fff;}
 
 
-header nav .navbar-toggler + .navbar-collapse {color:#f0f; background:rgba(0, 56, 101, 0.70); backdrop-filter:blur(5px);}
+header nav .navbar-toggler + .navbar-collapse {background:rgba(0, 56, 101, 0.70); backdrop-filter:blur(5px);}
 
 
 body.scrolled .fixed-top {background:rgba(0, 56, 101, 0.80); backdrop-filter:blur(5px);}
@@ -221,14 +226,14 @@ body.scrolled header nav .navbar-toggler + .navbar-collapse {background:none; ba
 #footer2 .copyright {text-align:left; line-height:30px;}
 #footer2 .copyright,
 #footer2 .address {letter-spacing:1px;}
-#footer2 .address {float:right;}
+/* #footer2 .address {float:right;} */
 #footer2 .address .info {line-height:30px;}
-#footer2 .address .info,
-#footer2 .address .social {float:left;}
+/* #footer2 .address .info,
+#footer2 .address .social {float:left;} */
 #footer2 {padding:25px 0; background:#E6E6E6; color:#0D3657; font:bold 12px "Archivo Narrow", san-serif; text-align:right;}
 #footer2 a {color:#0D5793;}
-#footer2 .social {margin-left:10px;}
-#footer2 .social a {font-size:28px; color:#0C3556;}
+/* #footer2 .social {margin-left:10px;}
+#footer2 .social a {font-size:28px; color:#0C3556;} */
 #footer2 .dot:after {content:"\B7"; padding:0 2px; color:#BB312B; font-size:25px; line-height:0; position:relative; top:2px;}
 
 
@@ -255,15 +260,11 @@ body.scrolled header nav .navbar-toggler + .navbar-collapse {background:none; ba
 #page-testimonials #content .quote:before {content:"\201C"; left:7px; top:2px;}
 #page-testimonials #content .quote:after {content:"\201D"; right:15px; bottom:-17px;}
 
-/* Testimonials */
-#page-services #content .row {/*margin-bottom:20px;*/}
-
 /* FAQs */
-#page-services #content .row {/*margin-bottom:20px;*/}
-#page-faqs ul {list-style-type:decimal; padding:0; list-style-position:inside;}
-#page-faqs ul li {font-weight:bold;}
-#page-faqs ul ul {list-style-type:lower-alpha; margin-bottom:20px; padding-left:20px;}
-#page-faqs ul ul li {font-weight:normal;}
+#page-faqs #content ul {list-style-type:decimal; padding:0; list-style-position:inside;}
+#page-faqs #content ul li {font-weight:bold;}
+#page-faqs #content ul ul {list-style-type:lower-alpha; margin-bottom:20px; padding-left:20px;}
+#page-faqs #content ul ul li {font-weight:normal;}
 
 /* Contact Us */
 #page-contact {}
@@ -380,11 +381,6 @@ body.scrolled header nav .navbar-toggler + .navbar-collapse {background:none; ba
 
 
 
-@media screen and (max-width: 1280px) {
-	#banner .slider #prev {left:30px;}
-	#banner .slider #next {right:30px;}
-}
-
 /* Banner touching the edges */
 @media screen and (max-width: 1400px) {
 	/*#banner .slider #prev {left:30px;}
@@ -400,7 +396,7 @@ body.scrolled header nav .navbar-toggler + .navbar-collapse {background:none; ba
 
 
 @media screen and (max-width: 768px) and (max-height: 960px) {
-	#header .nav {color:#F0F!important;}
+	/* #header .nav {color:#F0F!important;} */
 }
 
 
@@ -414,9 +410,9 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : portrait)
 and (-webkit-min-device-pixel-ratio: 1)  {
-	#header .nav li a {font-size:8px;}
+	/* #header .nav li a {font-size:8px;}
 	#header .call {font-size:14px;}
-	#header .call span {font-size:14px!important;}
+	#header .call span {font-size:14px!important;} */
 }
 
 
@@ -486,4 +482,7 @@ and (-webkit-min-device-pixel-ratio: 1)  {
 	header .call-block {font-size:21px;}
 	header .call-block span {font-size:27px;}
 	header .call-block .text-white {letter-spacing:1px;}
+
+	#banner .slider #prev {left:15px;}
+	#banner .slider #next {right:15px;}
 }
