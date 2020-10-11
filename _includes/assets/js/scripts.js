@@ -16,6 +16,17 @@ $(function () {
 		var os = "";
 	}
 
+	$(window).on('scroll', function () {
+		winWidth = $(window).width();
+		scrollTop = $(window).scrollTop();
+
+		if (scrollTop > 0) {
+			$('body').addClass('scrolled');
+		} else {
+			$('body').removeClass('scrolled');
+		}
+	});
+
 	//$("body").attr("id", pageStub).addClass(os); //no touchy!	
 
 	//Active page link
@@ -36,7 +47,6 @@ $(function () {
 
 	// Updates the info div immediately.
 	$(window).resize();
-
 });
 
 

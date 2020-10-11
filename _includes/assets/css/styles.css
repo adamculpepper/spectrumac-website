@@ -108,6 +108,7 @@ body {background:url(/_includes/assets/img/bg-body.jpg) no-repeat top center; ba
 
 /* Header */
 /*#header {position:relative;}*/
+header .navbar-container {min-height:151px; transition:max-height 200ms linear;}
 header .call-block {
 	padding:10px;
 	/*line-height:21px;*/
@@ -130,8 +131,16 @@ header nav li a {display:block; padding:15px; color:#96C0E2; font:bold 13px "Arc
 header nav li:first-child a {}
 header nav li a:hover {background:none; box-shadow:none; border:0; color:#FFF; outline:1px solid #000; border-bottom:2px solid #B32F29; -webkit-box-shadow:inset 0 0 25px 0 rgba(0, 0, 0, 0.40); box-shadow:inset 0 0 25px 0 rgba(0, 0, 0, 0.40);}
 header nav li a.active {color:#FFF!important;}
+header nav .navbar-brand img {max-height:120px; transition:max-height 200ms linear;}
 header nav .navbar-toggler {color:#fff;}
-header nav .navbar-brand img {max-width:180px;}
+
+
+header nav .navbar-toggler + .navbar-collapse {color:#f0f; background:rgba(0, 56, 101, 0.70); backdrop-filter:blur(5px);}
+
+
+body.scrolled .fixed-top {background:rgba(0, 56, 101, 0.70); backdrop-filter:blur(5px);}
+body.scrolled header navbar-container {min-height:122px;}
+body.scrolled header .navbar-brand img {max-height:90px;}
 
 /* Banner */
 #banner {position:relative;}
@@ -439,7 +448,7 @@ and (-webkit-min-device-pixel-ratio: 1)  {
 
 
 
-
+body.scrolled header nav .navbar-toggler + .navbar-collapse {background:none; backdrop-filter:none}
 
 
 
@@ -463,6 +472,8 @@ and (-webkit-min-device-pixel-ratio: 1)  {
 @media (min-width:992px) {
 	header nav li a {display:inline-block;}
 
+	header nav .navbar-toggler + .navbar-collapse {background:none;}
+
 	#footer1 .form {margin-top:-10px;}
 }
 
@@ -473,4 +484,5 @@ and (-webkit-min-device-pixel-ratio: 1)  {
 
 	header .call-block {font-size:21px;}
 	header .call-block span {font-size:27px;}
+	header .call-block .text-white {letter-spacing:1px;}
 }
