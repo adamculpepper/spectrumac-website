@@ -20,3 +20,5 @@ fields:
     max: 
     labelField: 
   label: System
+pages:
+- _data/ac_systems.json
