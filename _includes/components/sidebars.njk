@@ -40,7 +40,9 @@
 			</div>
 			{%- for system in ac_systems.systems -%}
 			<div class="col-sm-6">
-				<img src="{{ system.image }}" alt="{{ system.title }}">
+				<a href="{{ system.link }}" target="_blank">
+					<img src="{{ system.image }}" alt="{{ system.title }}">
+				</a>
 			</div>
 			{%- endfor -%}
 		</div>
