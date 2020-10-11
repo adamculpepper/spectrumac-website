@@ -2,7 +2,7 @@
 label: AC Systems
 hide_body: true
 fields:
-- name: system
+- name: systems
   type: field_group_list
   fields:
   - name: title
@@ -10,6 +10,11 @@ fields:
     config:
       required: false
     label: Title
+  - name: link
+    type: text
+    config:
+      required: false
+    label: Link
   - name: image
     type: file
     config:
@@ -19,6 +24,6 @@ fields:
     min: 
     max: 
     labelField: 
-  label: System
+  label: Systems
 pages:
 - _data/ac_systems.json
