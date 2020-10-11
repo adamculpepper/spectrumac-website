@@ -48,6 +48,10 @@ sections:
   path: _data/home_slides.json
   label: Home Slides
 - type: document
+  path: _data/ac_systems.json
+  label: AC Systems Serviced
+  match: "**/*"
+- type: document
   path: _data/metadata.json
   label: Metadata
 upload_dir: _includes/assets/uploads
