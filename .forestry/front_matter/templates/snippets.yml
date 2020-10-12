@@ -47,6 +47,11 @@ fields:
       config:
         required: false
       label: Zipcode
+    - name: google_maps_link
+      type: text
+      config:
+        required: false
+      label: Google Maps Link
     label: Physical Address
   label: Company Info
 - name: footer
