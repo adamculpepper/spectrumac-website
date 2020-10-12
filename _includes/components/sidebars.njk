@@ -11,9 +11,14 @@
 	<h4 class="text-danger">
 		{{ metadata.company_info.company_name }}
 	</h4>
-	{{ address1 }}<br>
-	{{ city }}, {{ state }} {{ zipcode }}<br>
-	<i class="fa fa-phone"></i> {{ metadata.company_info.phone_number }}
+	<a href="{{metadata.company_info.physical_address.google_maps_link}}" class="text-dark">
+		{{ address1 }}<br>
+		{{ city }}, {{ state }} {{ zipcode }}
+	</a>
+	<br>
+	<a href="tel:{{ metadata.company_info.phone_number }}">
+		<i class="fa fa-phone mr-2"></i>{{ metadata.company_info.phone_number }}
+	</a>
 
 	{% if section == 'contact' %}
 		<hr>

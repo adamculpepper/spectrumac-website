@@ -13,8 +13,7 @@ Spectrum Air Conditioning and Heating has been servicing the Greater Baton Rouge
 
 <br><br>
 
-<img src="http://placehold.it/250x150&text=family+photo" width="250" height="150" align="right" class="hide pretty padding right">
-<h3 style="width:100%;">About the Owner</h3>
+<h3>About the Owner</h3>
 Hi, I am David, founder of Spectrum AC &amp; Heating.<br><br>
 Growing up with a father in this industry and having his own business, I was introduced early on to the field of air conditioning and heating. I was taught a work ethic - to work hard, and "do it right" the first time. This has been passed on to my children.<br><br>
 Since the start up of Spectrum some 30+ years ago, my employees carry out these same values, as well. We treat every customers needs with consideration, just as we would our own family... and every job as if it were our own home or business. Given the opportunity, I would like to prove this to you.<br><br>

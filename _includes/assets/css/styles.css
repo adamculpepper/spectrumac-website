@@ -1,4 +1,7 @@
-
+/*
+Company: Spectrum Air Conditioning & Heating
+Developer: Adam Culpepper | @adamculpepper
+*/
 
 @font-face {
 	font-family:'Blackjack';
@@ -28,23 +31,18 @@
 }
 
 
-
 /* Resets */
-html, body {height:100%;}
-body, form, input, h1, h2, h3, h4, h5, h6 {margin:0; padding:0;}
-body {color:#323232; font:14px Arial, sans-serif;}
-a img {border:0;}
+body, html {padding:0; height:100%;}
+body {background:url(/_includes/assets/img/bg-body.jpg) no-repeat top center; background-size:100% 608px; background-attachment:scroll; color:#323232;}
 a {text-decoration:none; color:#067AAE;}
 a:hover {text-decoration:none;}
-table {border-collapse:collapse; border-spacing:0;}
-td, th {padding:0;}
+a img {border:0;}
 :focus {outline:0;}
 
 /* Global */
 .left {float:left;}
 .right {float:right;}
 .clear {clear:both;}
-.wrapper {width:1200px; margin:0 auto;}
 ::-webkit-input-placeholder {color:#487395;}
 :-ms-input-placeholder {color:#487395;}
 :-moz-placeholder {color:#487395;}
@@ -59,11 +57,9 @@ td, th {padding:0;}
 .blue {background:lightblue!important;}
 .yellow {background:lightyellow!important;}
 .green {background:lightgreen!important;}
-
-img.full {width:100%;}
 img.pretty {border:2px solid #FFF; box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.5);}
 
-h1, h2, h3, h4, h5, h6 {color:#104C7C; font:30px "Archivo Narrow", san-serif; text-transform:uppercase;}
+h1, h2, h3, h4, h5, h6 {color:#104C7C; font:30px "Archivo Narrow", san-serif; text-transform:uppercase; margin:0; padding:0;}
 h1 {font-size:40px;}
 h2 {font-size:36px; margin-bottom:30px;}
 h3 {font-size:24px; margin-bottom:15px; padding-bottom:5px; color:#BB312B; border-bottom:1px solid #DBDBDB;}
@@ -75,12 +71,11 @@ textarea,
 select {color:#0D2131; font:bold 13px "Archivo Narrow", san-serif; background:#F5F5F5; border:1px solid #DDD; padding:10px; border-radius:3px;}
 .btn {font-weight:bold; text-transform:uppercase; border:0;}
 .btn i {font-size:13px; margin-left:20px;}
+.btn.btn-lg {letter-spacing:2px;}
 .btn-primary {background:#BB312B;}
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {background:#A62924;}
-
-body {background:url(/_includes/assets/img/bg-body.jpg) no-repeat top center; background-size:100% 608px; background-attachment:scroll;}
 
 
 /* Header */
@@ -109,6 +104,7 @@ header nav .navbar-toggler {color:#fff;}
 header nav .navbar-toggler + .navbar-collapse {background:rgba(0, 56, 101, 0.70); backdrop-filter:blur(5px);}
 
 
+/* Scrolled */
 body.scrolled .fixed-top {background:rgba(0, 56, 101, 0.80); backdrop-filter:blur(5px);}
 body.scrolled header .navbar-container {min-height:122px;}
 body.scrolled header .navbar-brand img {max-height:80px;}
@@ -122,9 +118,19 @@ body.scrolled header nav .navbar-toggler + .navbar-collapse {background:none; ba
 #banner .slider {position:relative; top:2px; z-index:2;}
 #banner .slider img {width:100%;}
 #banner .slider #prev,
-#banner .slider #next {position:absolute; top:50%; z-index:999; color:#FFF; font-size:30px; cursor:pointer;}
-#banner .slider #prev {left:-60px;}
-#banner .slider #next {right:-60px;}
+#banner .slider #next {
+	position:absolute;
+	top:50%;
+	z-index:999;
+	color:#FFF;
+	font-size:30px;
+	cursor:pointer;
+	-webkit-transition: all .50s ease-out;
+	   -moz-transition: all .50s ease-out;
+	        transition: all .50s ease-out;
+	}
+#banner .slider #prev {left:30px;}
+#banner .slider #next {right:30px;}
 #banner .slider #prev:hover,
 #banner .slider #next:hover {color:#BBB;}
 
@@ -144,7 +150,7 @@ body.scrolled header nav .navbar-toggler + .navbar-collapse {background:none; ba
 #content .sidebar {color:#0D3657; line-height:25px;}
 #content .sidebar h4 {margin:30px 0 10px 0;}
 #content .sidebar h4.red {color:#BB312B;}
-#content .sidebar .fa-phone {position:relative; top:2px; font-size:15px;}
+#content .sidebar .fa-phone {position:relative; top:2px;}
 #content .sidebar.brands a {padding:0;}
 #content .sidebar.brands img {width:100%; margin-bottom:10px; border-bottom: 1px solid #eee;}
 #content .sidebar.brands h3 {margin-left:15px; margin-right:3px;}
@@ -176,12 +182,9 @@ footer #footer-top .form textarea:active {background:#7AA2C3;}
 footer #footer-top .form .col-sm-6:nth-child(2n) {padding-left:5px;}
 footer #footer-top .form .col-sm-6:nth-child(2n+1) {padding-right:5px;}
 
-footer #footer-bottom {line-height:30px; padding:25px 0; background:#E6E6E6; color:#0D3657; font:bold 12px "Archivo Narrow", san-serif;}
+footer #footer-bottom {background:#E6E6E6; color:#0D3657; font-family:'Archivo Narrow', san-serif; font-weight:700; letter-spacing:1px;}
 footer #footer-bottom a {color:#0D5793;}
-footer #footer-bottom .copyright,
-footer #footer-bottom .address {letter-spacing:1px;}
-footer #footer-bottom .dot:after {content:"\B7"; padding:0 2px; color:#BB312B; font-size:25px; line-height:0; position:relative; top:2px;}
-
+footer #footer-bottom .fa-circle {color:#BB312B; font-size:8px; position:relative; top:-2px;}
 
 
 /* Home */
@@ -215,17 +218,16 @@ footer #footer-bottom .dot:after {content:"\B7"; padding:0 2px; color:#BB312B; f
 
 
 /* Contact Us */
-#page-contact {}
-#page-contact #content .contact-form form {padding-right:150px;}
-#page-contact #content .contact-form label {display:block;}
-#page-contact #content .contact-form input[type=text],
-#page-contact #content .contact-form select,
-#page-contact #content .contact-form textarea {width:100%; margin-bottom:15px;}
-#page-contact .form-group:nth-of-type(odd) {padding-right:10px;}
-#page-contact .form-group:nth-of-type(even) {padding-left:10px;}
-#page-contact .city {}
-#page-contact .state {padding:0 10px;}
-#page-contact .zipcode {}
+/*#page-contact #content form {padding-right:150px;}*/
+#page-contact #content label {display:block; font-weight:700; margin-bottom:0;}
+#page-contact #content input[type=text],
+#page-contact #content select,
+#page-contact #content textarea {width:100%; margin-bottom:15px;}
+#page-contact #content .form-group:nth-of-type(odd) {/*padding-right:10px;*/}
+#page-contact #content .form-group:nth-of-type(even) {/*padding-left:10px;*/}
+#page-contact #content .city {}
+#page-contact #content .state {padding:0 10px;}
+#page-contact #content .zipcode {}
 
 
 /* Coupon */
@@ -241,6 +243,11 @@ footer #footer-bottom .dot:after {content:"\B7"; padding:0 2px; color:#BB312B; f
 
 
 
+
+
+
+
+/* Bootstrap Helpers */
 /* Add-on: Bootstrap 4, hidden-{breakpoint}-{up/down} */
 /* taken from Bootstrap 4, alpha 6 */
 .hidden-xs-up {display:none!important;}
@@ -255,27 +262,7 @@ footer #footer-bottom .dot:after {content:"\B7"; padding:0 2px; color:#BB312B; f
 .hidden-xl-down {display:none!important;}
 
 
-
-
-
-
-
-
-
-
-@media (max-width: 1200px) {
-	#banner .slider #prev {left:30px;}
-	#banner .slider #next {right:30px;}
-}
-
-
-/* iPad */
-@media (max-width: 767px) {
-	#banner .banner-overlay1,
-	#banner .banner-overlay2 {/*background-size:auto;*/}
-}
-
-
+/* Responsive Breakpoints */
 
 
 /* iPhone */
@@ -286,27 +273,6 @@ footer #footer-bottom .dot:after {content:"\B7"; padding:0 2px; color:#BB312B; f
 	#banner .slider #prev,
 	#banner .slider #next {font-size:20px; top:40%;}
 }
-
-
-
-
-
-
-
-/* Easing Elements */
-#banner .slider #prev,
-#banner .slider #next {
--webkit-transition: all .50s ease-out;
-   -moz-transition: all .50s ease-out;
-        transition: all .50s ease-out;
-}
-
-
-
-
-
-
-
 
 
 
@@ -354,6 +320,6 @@ footer #footer-bottom .dot:after {content:"\B7"; padding:0 2px; color:#BB312B; f
 	header .call-block span {font-size:27px;}
 	header .call-block .text-white {letter-spacing:1px;}
 
-	#banner .slider #prev {left:15px;}
-	#banner .slider #next {right:15px;}
+	#banner .slider #prev {left:-50px;}
+	#banner .slider #next {right:-50px;}
 }
