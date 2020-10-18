@@ -31,7 +31,8 @@
 		<div class="container py-4">
 			<div class="d-lg-flex">
 				<div class="d-sm-flex align-items-center mb-3 mb-lg-0">
-					&copy; Copyright 2020 <a href="/" class="ml-2">{{ metadata.company_info.company_name }}</a>
+					<span class="d-block d-sm-inline">&copy; Copyright {{ variables.date_year }}</span>
+					<a href="/" class="ml-sm-2">{{ metadata.company_info.company_name }}</a>
 				</div>
 				<div class="ml-auto d-sm-flex align-items-center">
 					<div class="d-sm-inline-block mb-3 mb-sm-0">
@@ -50,9 +51,4 @@
 	</div>
 </footer>
 
-<script src="/_includes/assets/js/jquery.min.js"></script>
-<script src="/_includes/assets/js/jquery-ui.min.js"></script>
-<script src="/_includes/assets/js/bootstrap.min.js"></script>
-<script src="/_includes/assets/js/jquery.cycle2.js"></script>
-<script src="/_includes/assets/js/jquery.cycle2.caption2.min.js"></script>
 <script src="/_includes/assets/js/scripts.js"></script>

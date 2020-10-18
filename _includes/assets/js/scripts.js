@@ -1,17 +1,14 @@
 // Spectrum AC & Heating
 // Developer: Adam Culpepper
 
-$(function () {
-	$(window).on('scroll', function () {
-		winWidth = $(window).width();
-		scrollTop = $(window).scrollTop();
+window.addEventListener('scroll', function(e) {
+	let scrollTop = window.scrollY;
 
-		if (scrollTop > 0) {
-			$('body').addClass('scrolled');
-		} else {
-			$('body').removeClass('scrolled');
-		}
-	});
+	if (scrollTop > 0) {
+		document.body.classList.add('scrolled');
+	} else {
+		document.body.classList.remove('scrolled');
+	}
 });
 
 // Print

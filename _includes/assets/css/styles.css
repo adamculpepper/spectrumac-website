@@ -15,14 +15,6 @@ Developer: Adam Culpepper | @adamculpepper
 }
 
 @font-face {
-    font-family:'Archivo Narrow Bold';
-    src:url('/_includes/assets/fonts/archivonarrow-bold-webfont.woff2') format('woff2'),
-        url('/_includes/assets/fonts/archivonarrow-bold-webfont.woff') format('woff');
-    font-weight:normal;
-    font-style:normal;
-}
-
-@font-face {
     font-family:'Archivo Narrow';
     src:url('/_includes/assets/fonts/archivonarrow-regular-webfont.woff2') format('woff2'),
         url('/_includes/assets/fonts/archivonarrow-regular-webfont.woff') format('woff');
@@ -39,6 +31,7 @@ a:hover {text-decoration:none;}
 a img {border:0;}
 :focus {outline:0;}
 
+
 /* Global */
 ::-webkit-input-placeholder {color:#487395;}
 :-ms-input-placeholder {color:#487395;}
@@ -51,29 +44,29 @@ a img {border:0;}
 .flex-center-h {display:flex; justify-content:center;}
 .overflow {overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
 .red {background:lightsalmon!important;}
-.blue {background:lightblue!important;}
-.yellow {background:lightyellow!important;}
 .green {background:lightgreen!important;}
+.blue {background:lightblue!important;}
 img.pretty {border:2px solid #FFF; box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.5);}
-
-h1, h2, h3, h4, h5, h6 {color:#104C7C; font:30px "Archivo Narrow", san-serif; text-transform:uppercase; margin:0; padding:0;}
+h1, h2, h3, h4, h5, h6 {color:#104C7C; font:30px 'Archivo Narrow', san-serif; text-transform:uppercase; margin:0; padding:0;}
 h1 {font-size:40px;}
 h2 {font-size:36px; margin-bottom:30px;}
 h3 {font-size:24px; margin-bottom:15px; padding-bottom:5px; color:#BB312B; border-bottom:1px solid #DBDBDB;}
 h4 {font-size:18px;}
 h5 {font-size:11px;}
 hr {height:1px; border:0; background:#CCC; margin:20px 0;}
+label {display:block; font-weight:500; margin-bottom:0;}
 .form-control {color:#0D2131; background:#fafafa; border:1px solid #DDD;}
 .btn {font-weight:bold; text-transform:uppercase; border:0;}
-.btn i {font-size:13px; margin-left:20px;}
-.btn.btn-lg {letter-spacing:2px;}
+.btn i {font-size:13px;}
+.btn-lg {letter-spacing:1px;}
 .btn-primary {background:#BB312B;}
 .btn-primary:hover,
 .btn-primary:focus,
-.btn-primary:active {background-color:#A62924;}
+.btn-primary:active {background-color:#A62924!important;}
+
 
 /* Sticky Footer */
-body {display:flex; flex-direction:column; /*border:5px solid red;*/}
+body {display:flex; flex-direction:column;}
 main {flex:1 0 auto;}
 footer {flex-shrink:0;}
 
@@ -90,13 +83,13 @@ header .call-block {
 		1px 1px 0 0 rgba(0, 0, 0, 0.20);
 	border-radius:5px;	
 }
-header .call-block .text {font:bold 21px "Blackjack", san-serif; color:#BB312B;}
-header .call-block .number {color:#FFF; font:bold 27px "Archivo Narrow", san-serif; /*line-height:28px;*/ text-shadow:5px 5px 5px rgba(0, 0, 0, 0.15);}
+header .call-block .text {font:bold 21px 'Blackjack', san-serif; color:#BB312B;}
+header .call-block .number {color:#FFF; font:bold 27px 'Archivo Narrow', san-serif; text-shadow:5px 5px 5px rgba(0, 0, 0, 0.15);}
 
 
 /* Navigation */
 header nav ul {background:none; position:relative; padding:0; border:0; list-style:none;}
-header nav li a {display:block; padding:15px; color:#96C0E2; font:bold 13px "Archivo Narrow", san-serif; text-shadow:2px 2px 0 rgba(0, 0, 0, 0.30); text-transform:uppercase;}
+header nav li a {display:block; padding:15px; color:#96C0E2; font:bold 13px 'Archivo Narrow', san-serif; text-shadow:2px 2px 0 rgba(0, 0, 0, 0.30); text-transform:uppercase;}
 header nav li a:hover {background:none; box-shadow:none; border:0; color:#FFF;}
 header nav li a.active {color:#FFF!important;}
 header nav .navbar-brand img {max-height:120px; transition:max-height 200ms linear;}
@@ -125,9 +118,9 @@ body.scrolled header nav .navbar-toggler + .navbar-collapse {background:none; ba
 	color:#FFF;
 	font-size:30px;
 	cursor:pointer;
-	-webkit-transition: all .50s ease-out;
-	   -moz-transition: all .50s ease-out;
-	        transition: all .50s ease-out;
+	-webkit-transition:all .50s ease-out;
+	   -moz-transition:all .50s ease-out;
+	        transition:all .50s ease-out;
 	}
 #banner .slider #prev {left:30px;}
 #banner .slider #next {right:30px;}
@@ -152,7 +145,7 @@ body.scrolled header nav .navbar-toggler + .navbar-collapse {background:none; ba
 #content .sidebar h4.red {color:#BB312B;}
 #content .sidebar .fa-phone {position:relative; top:2px;}
 #content .sidebar.brands a {padding:0;}
-#content .sidebar.brands img {width:100%; margin-bottom:10px; border-bottom: 1px solid #eee;}
+#content .sidebar.brands img {width:100%; margin-bottom:10px; border-bottom:1px solid #eee;}
 #content .sidebar.brands h3 {margin-left:15px; margin-right:3px;}
 #content .sidebar.brands h4 {margin:15px 0 5px 0; clear:both;}
 #content .sidebar.brands div:first-of-type h4 {margin-top:0;}
@@ -162,8 +155,8 @@ body.scrolled header nav .navbar-toggler + .navbar-collapse {background:none; ba
 footer #footer-top {background:#DBDBDB;}
 footer #footer-top h4 {margin-bottom:10px; font-size:30px; font-weight:bold;}
 footer #footer-top .form {color:#FFF; background:#0C3657; border-radius:3px 3px 0 0; padding:20px 25px; -webkit-box-shadow:inset 0 0 50px 0 rgba(0, 0, 0, 0.40); box-shadow:inset 0 0 50px 0 rgba(0, 0, 0, 0.40);}
-footer #footer-top .form .top {position:relative; z-index:3; color:#A8C4DA; font:32px "Blackjack", san-serif;}
-footer #footer-top .form .bot {position:relative; z-index:2; color:#FFF; font:bold 28px "Archivo Narrow", san-serif; text-transform:uppercase;}
+footer #footer-top .form .top {position:relative; z-index:3; color:#A8C4DA; font:32px 'Blackjack', san-serif;}
+footer #footer-top .form .bot {position:relative; z-index:2; color:#FFF; font:bold 28px 'Archivo Narrow', san-serif; text-transform:uppercase;}
 footer #footer-top .form textarea {max-height:200px;}
 footer #footer-top .form .form-control {width:100%; background:#A8C4DA; border:0;}
 footer #footer-top .form .form-control:focus {background:#7AA2C3;}
@@ -180,8 +173,8 @@ footer #footer-bottom .fa-circle {color:#BB312B; font-size:8px; position:relativ
 
 #page-home #content .text1,
 #page-home #content .text2 {text-shadow:3px 3px 0 rgba(0, 0, 0, 0.20);}
-#page-home #content .text1 {position:relative; z-index:3; color:#0063B3; font:55px "Blackjack", san-serif; letter-spacing:2.3px;}
-#page-home #content .text2 {position:relative; z-index:2; color:#003865; font:72px "Archivo Narrow", san-serif; letter-spacing:-2px; line-height:65px; font-weight:bold; text-transform:uppercase;}
+#page-home #content .text1 {position:relative; z-index:3; color:#0063B3; font:55px 'Blackjack', san-serif; letter-spacing:2.3px;}
+#page-home #content .text2 {position:relative; z-index:2; color:#003865; font:72px 'Archivo Narrow', san-serif; letter-spacing:-2px; line-height:65px; font-weight:bold; text-transform:uppercase;}
 
 
 /* Testimonials */
@@ -191,9 +184,9 @@ footer #footer-bottom .fa-circle {color:#BB312B; font-size:8px; position:relativ
 #page-testimonials #content .quote {padding-bottom:10px; font-style:italic;}
 #page-testimonials #content .client {color:#999;}
 #page-testimonials #content .quote:before,
-#page-testimonials #content .quote:after {position:absolute; color:#CCC; font-size:45px; font-family:Georgia, serif; font-weight:bold;}
-#page-testimonials #content .quote:before {content:"\201C"; left:7px; top:2px;}
-#page-testimonials #content .quote:after {content:"\201D"; right:15px; bottom:-17px;}
+#page-testimonials #content .quote:after {position:absolute; color:#CCC; font-size:45px; font-family:'Georgia', serif; font-weight:bold;}
+#page-testimonials #content .quote:before {content:'\201C'; left:7px; top:2px;}
+#page-testimonials #content .quote:after {content:'\201D'; right:15px; bottom:-17px;}
 
 
 /* FAQs */
@@ -203,34 +196,10 @@ footer #footer-bottom .fa-circle {color:#BB312B; font-size:8px; position:relativ
 #page-faqs #content ul ul li {font-weight:normal;}
 
 
-/* Contact Us */
-/*#page-contact #content form {padding-right:150px;}*/
-#page-contact #content label {display:block; font-weight:700; margin-bottom:0;}
-#page-contact #content input[type=text],
-#page-contact #content select,
-#page-contact #content textarea {width:100%; margin-bottom:15px;}
-#page-contact #content .form-group:nth-of-type(odd) {/*padding-right:10px;*/}
-#page-contact #content .form-group:nth-of-type(even) {/*padding-left:10px;*/}
-#page-contact #content .city {}
-#page-contact #content .state {padding:0 10px;}
-#page-contact #content .zipcode {}
-
-
 /* Coupon */
 #page-coupon #content img.coupon {cursor:pointer;}
 #page-coupon #content h2 {margin-bottom:0;}
 #page-coupon #content h3 {border:0;}
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Bootstrap Helpers */
@@ -249,30 +218,6 @@ footer #footer-bottom .fa-circle {color:#BB312B; font-size:8px; position:relativ
 
 
 /* Responsive Breakpoints */
-
-
-/* iPhone */
-@media screen and (max-width: 480px) {
-	#banner {margin:0;}
-	#banner .cycle-slideshow {width:100%!important;}
-
-	#banner .slider #prev,
-	#banner .slider #next {font-size:20px; top:40%;}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Bootstrap Breakpoints */
 
 /* Small (sm) and up*/
 @media (min-width:576px) {
