@@ -113,7 +113,7 @@ body.scrolled header nav .navbar-toggler + .navbar-collapse {background:none; ba
 #banner .slider #prev,
 #banner .slider #next {
 	position:absolute;
-	top:50%;
+	top:40%;
 	z-index:999;
 	color:#FFF;
 	font-size:30px;
@@ -223,6 +223,9 @@ footer #footer-bottom .fa-circle {color:#BB312B; font-size:8px; position:relativ
 @media (min-width:576px) {
 	#page-home #content .text1 {font-size:62px;}
 	#page-home #content .text2 {font-size:72px;}
+
+	#banner .slider #prev,
+	#banner .slider #next {top:50%;}
 }
 
 
