@@ -38,9 +38,9 @@
 			<h4 class="mt-0">Air Conditioning Systems</h4>
 		</div>
 		{%- for system in ac_systems.systems -%}
-		<div class="col-6 col-sm-4 col-lg-6">
+		<div class="col-6 col-sm-4 col-lg-6 {% if loop.index % 2 %}pr-lg-0{% else %}pl-lg-0{% endif %}">
 			<a href="{{ system.link }}" target="_blank">
-				<img src="{{ system.image }}" alt="{{ system.title }}" class="img-fluid">
+				<img src="{{ system.image }}" alt="{{ system.title }}" class="w-100">
 			</a>
 		</div>
 		{%- endfor -%}
