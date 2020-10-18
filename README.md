@@ -106,6 +106,7 @@ npx @11ty/eleventy
 Or build automatically when a template changes:
 ```
 npx @11ty/eleventy --watch
+npx @11ty/eleventy --serve (actually works)
 ```
 
 Or in debug mode:
