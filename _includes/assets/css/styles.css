@@ -105,9 +105,9 @@ body.scrolled header nav .navbar-toggler + .navbar-collapse {background:none; ba
 
 
 /* Banner */
-#banner {position:relative; height:50px;}
+#banner {position:relative; height:50px; margin-bottom:6px;}
 #banner .banner-overlay1 {position:absolute; z-index:1; bottom:8px; width:100%; height:40px; background:url(/_includes/assets/img/bg-banner-overlay1.png) no-repeat top center; background-size:100% 40px;}
-#banner .banner-overlay2 {position:absolute; z-index:3; bottom:-3px; width:100%; height:30px; background:url(/_includes/assets/img/bg-banner-overlay2.png) no-repeat top center; background-size:100% 30px;}
+#banner .banner-overlay2 {position:absolute; z-index:3; bottom:-7px; width:100%; height:30px; background:url(/_includes/assets/img/bg-banner-overlay2.png) no-repeat top center; background-size:100% 30px;}
 #banner .slider {position:relative; top:2px; z-index:2;}
 #banner .slider img {width:100%;}
 #banner .slider #prev,
@@ -167,7 +167,7 @@ footer #footer-bottom .fa-circle {color:#BB312B; font-size:8px; position:relativ
 
 
 /* Home */
-#page-home #banner {height:438px; height:auto;}
+#page-home #banner {height:auto;}
 #page-home #banner .cycle-slideshow {margin:0;}
 #page-home #banner .cycle-overlay {width:300px; padding:20px 40px; position:absolute; top:40%; left:100px; bottom:auto; opacity:1; border-radius:4px; color:#FFF; background:#BB312B; box-shadow:inset 0 0 85px 0 rgba(0, 0, 0, 0.45);}
 
@@ -224,8 +224,11 @@ footer #footer-bottom .fa-circle {color:#BB312B; font-size:8px; position:relativ
 	#page-home #content .text1 {font-size:62px;}
 	#page-home #content .text2 {font-size:72px;}
 
-	#banner .slider #prev,
-	#banner .slider #next {top:50%;}
+	#page-home #banner {margin-bottom:0;}
+	#page-home #banner .banner-overlay2 {bottom:-3px;}
+
+	#page-home #banner .slider #prev,
+	#page-home #banner .slider #next {top:50%;}
 }
 
 
@@ -255,6 +258,6 @@ footer #footer-bottom .fa-circle {color:#BB312B; font-size:8px; position:relativ
 	header .call-block span {font-size:27px;}
 	header .call-block .text-white {letter-spacing:1px;}
 
-	#banner .slider #prev {left:-50px;}
-	#banner .slider #next {right:-50px;}
+	#page-home #banner .slider #prev {left:-50px;}
+	#page-home #banner .slider #next {right:-50px;}
 }
