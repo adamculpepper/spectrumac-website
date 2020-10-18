@@ -9,7 +9,7 @@ eleventyNavigation:
 ---
 <div class="row">
 	<div class="col-lg-4">
-		<img src="/_includes/assets/uploads/content-home-spectrum-ac-and-heating.jpg" class="img-fluid pretty">
+		<img src="/_includes/assets/uploads/content-home-spectrum-ac-and-heating.jpg" alt="{{ metadata.company_info.company_name }}, Baker Louisiana Location" class="img-fluid pretty">
 	</div>
 	<div class="col-lg-8 mt-3 mt-lg-0">
 		<div class="text1">Let Our Family</div>

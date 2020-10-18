@@ -12,14 +12,16 @@ Developer: Adam Culpepper | @adamculpepper
 		url('/_includes/assets/fonts/black_jack-webfont.svg#blackjackregular') format('svg');
 	font-weight:normal;
 	font-style:normal;
+	font-display:swap;
 }
 
 @font-face {
-    font-family:'Archivo Narrow';
-    src:url('/_includes/assets/fonts/archivonarrow-regular-webfont.woff2') format('woff2'),
-        url('/_includes/assets/fonts/archivonarrow-regular-webfont.woff') format('woff');
-    font-weight:normal;
-    font-style:normal;
+	font-family:'Archivo Narrow';
+	src:url('/_includes/assets/fonts/archivonarrow-regular-webfont.woff2') format('woff2'),
+		url('/_includes/assets/fonts/archivonarrow-regular-webfont.woff') format('woff');
+	font-weight:normal;
+	font-style:normal;
+	font-display:swap;
 }
 
 
