@@ -40,9 +40,6 @@ a img {border:0;}
 :focus {outline:0;}
 
 /* Global */
-.left {float:left;}
-.right {float:right;}
-.clear {clear:both;}
 ::-webkit-input-placeholder {color:#487395;}
 :-ms-input-placeholder {color:#487395;}
 :-moz-placeholder {color:#487395;}
@@ -66,9 +63,7 @@ h3 {font-size:24px; margin-bottom:15px; padding-bottom:5px; color:#BB312B; borde
 h4 {font-size:18px;}
 h5 {font-size:11px;}
 hr {height:1px; border:0; background:#CCC; margin:20px 0;}
-input,
-textarea,
-select {color:#0D2131; font:bold 13px "Archivo Narrow", san-serif; background:#F5F5F5; border:1px solid #DDD; padding:10px; border-radius:3px;}
+.form-control {color:#0D2131; background:#fafafa; border:1px solid #DDD;}
 .btn {font-weight:bold; text-transform:uppercase; border:0;}
 .btn i {font-size:13px; margin-left:20px;}
 .btn.btn-lg {letter-spacing:2px;}
