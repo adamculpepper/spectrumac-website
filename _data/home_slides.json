@@ -4,14 +4,14 @@
       "title": "Banner 1 - Air Quality",
       "link": "/services",
       "caption": "test caption 1",
-      "image": "/_includes/assets/uploads/banner1.png",
+      "image": "/_includes/assets/uploads/banner1.jpg",
       "enabled": true
     },
     {
       "title": "Banner 2 - Services",
       "link": "/services",
       "caption": "caption2",
-      "image": "/_includes/assets/uploads/banner2.png",
+      "image": "/_includes/assets/uploads/banner2.jpg",
       "enabled": true
     },
     {
@@ -19,21 +19,21 @@
       "title": "Banner 3 - Family Warm",
       "link": "",
       "caption": "",
-      "image": "/_includes/assets/uploads/banner3.png"
+      "image": "/_includes/assets/uploads/banner3.jpg"
     },
     {
       "enabled": true,
       "title": "Banner 4 - Generator",
       "link": "/services",
       "caption": "",
-      "image": "/_includes/assets/uploads/banner4.png"
+      "image": "/_includes/assets/uploads/banner4.jpg"
     },
     {
       "enabled": false,
       "title": "Banner 5 - Coupon",
       "link": "/coupon",
       "caption": "",
-      "image": "/_includes/assets/uploads/banner5.png"
+      "image": "/_includes/assets/uploads/banner5.jpg"
     },
     {
       "enabled": true,
