@@ -75,7 +75,7 @@ select {color:#0D2131; font:bold 13px "Archivo Narrow", san-serif; background:#F
 .btn-primary {background:#BB312B;}
 .btn-primary:hover,
 .btn-primary:focus,
-.btn-primary:active {background:#A62924;}
+.btn-primary:active {background-color:#A62924;}
 
 /* Sticky Footer */
 body {display:flex; flex-direction:column; /*border:5px solid red;*/}
@@ -170,16 +170,8 @@ footer #footer-top .form {color:#FFF; background:#0C3657; border-radius:3px 3px 
 footer #footer-top .form .top {position:relative; z-index:3; color:#A8C4DA; font:32px "Blackjack", san-serif;}
 footer #footer-top .form .bot {position:relative; z-index:2; color:#FFF; font:bold 28px "Archivo Narrow", san-serif; text-transform:uppercase;}
 footer #footer-top .form textarea {max-height:200px;}
-footer #footer-top .form input,
-footer #footer-top .form textarea {border:0;}
-footer #footer-top .form input[type=text],
-footer #footer-top .form input[type=email],
-footer #footer-top .form input[type=tel],
-footer #footer-top .form textarea {width:100%; background:#A8C4DA;}
-footer #footer-top .form input[type=text]:focus,
-footer #footer-top .form input[type=text]:active,
-footer #footer-top .form textarea:focus,
-footer #footer-top .form textarea:active {background:#7AA2C3;}
+footer #footer-top .form .form-control {width:100%; background:#A8C4DA; border:0;}
+footer #footer-top .form .form-control:focus {background:#7AA2C3;}
 
 footer #footer-bottom {background:#E6E6E6; color:#0D3657; font-family:'Archivo Narrow', san-serif; font-weight:700; letter-spacing:1px;}
 footer #footer-bottom a {color:#0D5793;}
@@ -194,7 +186,7 @@ footer #footer-bottom .fa-circle {color:#BB312B; font-size:8px; position:relativ
 #page-home #content .text1,
 #page-home #content .text2 {text-shadow:3px 3px 0 rgba(0, 0, 0, 0.20);}
 #page-home #content .text1 {position:relative; z-index:3; color:#0063B3; font:55px "Blackjack", san-serif; letter-spacing:2.3px;}
-#page-home #content .text2 {position:relative; z-index:2; color:#003865; font:72px "Archivo Narrow", san-serif; letter-spacing:-2px; font-weight:bold; text-transform:uppercase;}
+#page-home #content .text2 {position:relative; z-index:2; color:#003865; font:72px "Archivo Narrow", san-serif; letter-spacing:-2px; line-height:65px; font-weight:bold; text-transform:uppercase;}
 
 
 /* Testimonials */
@@ -289,7 +281,7 @@ footer #footer-bottom .fa-circle {color:#BB312B; font-size:8px; position:relativ
 
 /* Small (sm) and up*/
 @media (min-width:576px) {
-	#page-home #content .text1 {font-size:62px; margin-bottom:-15px;}
+	#page-home #content .text1 {font-size:62px;}
 	#page-home #content .text2 {font-size:72px;}
 }
 
