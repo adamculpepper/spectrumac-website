@@ -4,10 +4,16 @@
 	<title>{{ title or renderData.title or metadata.title }}</title>
 	<meta name="description" content="Air Conditioning & Heating Service and Maintenance.">
 
-	{% set css %}
-		{% include "assets/css/bootstrap.min.css" %}
-		{% include "assets/css/font-awesome.min.css" %}
-		{% include "assets/css/styles.css" %}
-	{% endset %}
-	<style>{{ css | cssmin | safe }}</style>
+	{% if variables.environment == 'development' %}
+		<link rel="stylesheet" type="text/css" href="/_includes/assets/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="/_includes/assets/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="/_includes/assets/css/styles.css">
+	{% else %}
+		{% set css %}
+			{% include "assets/css/bootstrap.min.css" %}
+			{% include "assets/css/font-awesome.min.css" %}
+			{% include "assets/css/styles.css" %}
+		{% endset %}
+		<style>{{ css | cssmin | safe }}</style>
+	{% endif %}
 </head>

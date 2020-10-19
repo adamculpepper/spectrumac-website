@@ -1,3 +1,5 @@
+require('dotenv').config({path: __dirname + '/.env.dev'});
+
 const { DateTime } = require("luxon");
 const CleanCSS = require("clean-css");
 const UglifyJS = require("uglify-es");
