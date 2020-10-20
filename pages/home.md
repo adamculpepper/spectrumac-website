@@ -7,12 +7,13 @@ eleventyNavigation:
   key: Home
   order: 0
 ---
-<div class="row">
-	<div class="col-lg-4">
-		<img src="/_includes/assets/uploads/content-home-spectrum-ac-and-heating.jpg" alt="{{ metadata.company_info.company_name }}, Baker Louisiana Location" class="img-fluid pretty">
-	</div>
-	<div class="col-lg-8 mt-3 mt-lg-0">
-		<div class="text1">Let Our Family</div>
-		<div class="text2">Take care of yours!</div>
-	</div>
-</div>
+
+:::: row
+::: col-lg-4
+![{{ metadata.company_info.company_name }}, Baker Louisiana Location](/_includes/assets/uploads/content-home-spectrum-ac-and-heating.jpg){.img-fluid .pretty}
+:::
+::: col-lg-8 mt-3 mt-lg-0 list-unstyled
+* Let Our Family{.text1}
+* Take care of yours!{.text2}
+:::
+::::

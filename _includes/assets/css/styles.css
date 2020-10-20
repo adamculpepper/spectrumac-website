@@ -57,6 +57,8 @@ h4 {font-size:18px;}
 h5 {font-size:11px;}
 hr {height:1px; border:0; background:#CCC; margin:20px 0;}
 label {display:block; font-weight:500; margin-bottom:0;}
+ul.list-unstyled,
+.list-unstyled ul {padding:0; list-style:none;}
 .form-control {color:#0D2131; background:#fafafa; border:1px solid #DDD;}
 .btn {font-weight:bold; text-transform:uppercase; border:0;}
 .btn i {font-size:13px;}
