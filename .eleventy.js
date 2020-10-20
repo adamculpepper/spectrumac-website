@@ -104,6 +104,15 @@ module.exports = function(eleventyConfig) {
 		.use(markdownItAttrs)
 	);
 
+
+	/* Plugin: eleventy-plugin-respimg */
+	const pluginRespimg = require('eleventy-plugin-respimg');
+	eleventyConfig.cloudinaryCloudName = process.env.CLOUDINARY_CLOUD_NAME;
+	eleventyConfig.srcsetWidths = [ 320, 640, 960, 1280, 1600, 1920, 2240, 2560 ];
+	eleventyConfig.fallbackWidth = 640;
+	eleventyConfig.addPlugin( pluginRespimg );
+
+
 	return {
 		templateFormats: ["md", "njk", "html", "liquid"],
 

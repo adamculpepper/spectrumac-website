@@ -10,7 +10,7 @@ eleventyNavigation:
 
 :::: row
 ::: col-lg-4
-![{{ metadata.company_info.company_name }}, Baker Louisiana Location](/_includes/assets/uploads/content-home-spectrum-ac-and-heating.jpg){.img-fluid .pretty}
+{% respimg "https://spectrumac.netlify.app/_includes/assets/uploads/content-home-spectrum-ac-and-heating.jpg", "", "360px", "img-fluid pretty" %}
 :::
 ::: col-lg-8 mt-3 mt-lg-0 list-unstyled
 * Let Our Family{.text1}
