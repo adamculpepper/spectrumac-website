@@ -48,17 +48,19 @@ module.exports = function(eleventyConfig) {
 	});
 
 	// Minify HTML output
-	eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
-		if (outputPath.indexOf(".html") > -1) {
-			let minified = htmlmin.minify(content, {
-				useShortDoctype: true,
-				removeComments: true,
-				collapseWhitespace: true
-			});
-			return minified;
-		}
-		return content;
-	});
+	if (process.env.ELEVENTY_ENV == 'production') {
+		eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+			if (outputPath.indexOf(".html") > -1) {
+				let minified = htmlmin.minify(content, {
+					useShortDoctype: true,
+					removeComments: true,
+					collapseWhitespace: true
+				});
+				return minified;
+			}
+			return content;
+		});
+	}
 
 	// Universal slug filter strips unsafe chars from URLs
 	eleventyConfig.addFilter("slugify", function(str) {
@@ -105,12 +107,29 @@ module.exports = function(eleventyConfig) {
 	);
 
 
+	//module.exports = function(eleventyConfig, pluginNamespace) {
+		//eleventyConfig.namespace(pluginNamespace, () => {
+			eleventyConfig.addShortcode('respimg', (path, alt, sizes, classes) => {
+				const hostname = eleventyConfig.hostname ? eleventyConfig.hostname : '';
+				const arraySizes = sizes.replace(/ /g,'').split(',');
+				const maxSize = Math.max.apply(Math, arraySizes);
+				const fetchBase = `https://res.cloudinary.com/${eleventyConfig.cloudinaryCloudName}/image/fetch/`;
+				const src = `${fetchBase}q_auto,f_auto,w_${maxSize}/${hostname}${path}`;
+				const srcset = arraySizes.map(w => {
+					return `\n${fetchBase}q_auto,f_auto,w_${w}/${hostname}${path} ${w}w`;
+				}).join(',');
+
+				return `<img \nsizes="(max-width: ${maxSize}px) 100vw, ${maxSize}px" \nsrcset="${srcset}" \nsrc="${src}" \nalt="${alt ? alt : ''}" \nclass="${classes ? classes : ''}">`;
+			});
+		//});
+	//};
+
+
 	/* Plugin: eleventy-plugin-respimg */
-	const pluginRespimg = require('eleventy-plugin-respimg');
+	//const pluginRespimg = require('eleventy-plugin-respimg');
 	eleventyConfig.cloudinaryCloudName = process.env.CLOUDINARY_CLOUD_NAME;
-	eleventyConfig.srcsetWidths = [ 320, 640, 960, 1280, 1600, 1920, 2240, 2560 ];
-	eleventyConfig.fallbackWidth = 640;
-	eleventyConfig.addPlugin( pluginRespimg );
+	eleventyConfig.hostname = 'https://spectrumac.netlify.app';
+	//eleventyConfig.addPlugin( pluginRespimg );
 
 
 	return {

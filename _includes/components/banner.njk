@@ -24,9 +24,14 @@
 
 					{%- for banner in home_slides.slides -%}
 						<a href="{{ banner.link }}" data-cycle-title="{{ banner.title }}" data-cycle-desc="{{ banner.caption }}">
-							<img src="{{ banner.image }}" alt="{{ banner.title }}">
+							{% respimg banner.image, banner.title, "200, 467, 664, 828, 977, 1200" %}
 						</a>
 					{%- endfor -%}
+
+
+
+
+
 				</div>
 				<span id="next">
 					<i class="fa fa-chevron-right"></i>
