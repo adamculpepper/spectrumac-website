@@ -28,6 +28,11 @@ fields:
     config:
       maxSize: 64
     label: Image
+  - name: image2
+    type: file
+    config:
+      maxSize: 64
+    label: Image2
   config:
     min: 
     max: 
