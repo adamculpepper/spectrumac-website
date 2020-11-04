@@ -24,6 +24,11 @@ fields:
   - type: text
     name: debug
     label: debug
+  - name: preview
+    type: text
+    config:
+      required: false
+    label: preview
 - type: field_group
   name: repository
   label: repository
