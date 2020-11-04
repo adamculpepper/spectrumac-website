@@ -56,7 +56,6 @@ sections:
 - type: document
   path: package.json
   label: package.json
-  match: "**/*"
 upload_dir: _includes/assets/uploads
 public_path: "/_includes/assets/uploads"
 front_matter_path: ''
