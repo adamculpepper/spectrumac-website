@@ -18,7 +18,7 @@ eleventyNavigation:
 	path="/_includes/assets/uploads/content-home-spectrum-ac-and-heating.jpg",
 	alt=homeContentImageAlt,
 	sizes="200, 280, 360",
-	classes="img-fluid pretty moop"
+	classes="img-fluid pretty"
 %}
 :::
 ::: col-lg-8 mt-3 mt-lg-0 list-unstyled
