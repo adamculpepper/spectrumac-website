@@ -8,10 +8,18 @@ eleventyNavigation:
   order: 0
 ---
 
+{% set homeContentImageAlt -%}
+	{{metadata.company_info.company_name}}, Baker Louisiana Location
+{% endset -%}
+
 :::: row
 ::: col-lg-4
-{% respimg "/_includes/assets/uploads/content-home-spectrum-ac-and-heating.jpg", metadata.company_info.company_name, "200, 280, 360", "img-fluid pretty" %}
-<!-- ![{{ metadata.company_info.company_name }}, Baker Louisiana Location](/_includes/assets/uploads/content-home-spectrum-ac-and-heating.jpg){.img-fluid .pretty} -->
+{% imgresp
+	path="/_includes/assets/uploads/content-home-spectrum-ac-and-heating.jpg",
+	alt=homeContentImageAlt,
+	sizes="200, 280, 360",
+	classes="img-fluid pretty moop"
+%}
 :::
 ::: col-lg-8 mt-3 mt-lg-0 list-unstyled
 * Let Our Family{.text1}

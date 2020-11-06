@@ -106,24 +106,42 @@ module.exports = function(eleventyConfig) {
 		.use(markdownItAttrs)
 	);
 
-
 	//module.exports = function(eleventyConfig, pluginNamespace) {
 		//eleventyConfig.namespace(pluginNamespace, () => {
-			eleventyConfig.addShortcode('respimg', (path, alt, sizes, classes) => {
-				const hostname = eleventyConfig.hostname ? eleventyConfig.hostname : '';
-				const arraySizes = sizes.replace(/ /g,'').split(',');
-				const maxSize = Math.max.apply(Math, arraySizes);
-				const fetchBase = `https://res.cloudinary.com/${eleventyConfig.cloudinaryCloudName}/image/fetch/`;
-				const src = `${fetchBase}q_auto,f_auto,w_${maxSize}/${hostname}${path}`;
-				const srcset = arraySizes.map(w => {
-					return `\n${fetchBase}q_auto,f_auto,w_${w}/${hostname}${path} ${w}w`;
-				}).join(',');
+			eleventyConfig.addShortcode('imgresp', parameter => {
+				var errors = '';
 
-				return `<img \nsizes="(max-width: ${maxSize}px) 100vw, ${maxSize}px" \nsrcset="${srcset}" \nsrc="${src}" \nalt="${alt ? alt : ''}" \nclass="${classes ? classes : ''}">`;
+				if (!parameter.path) {
+					errors += 'path parameter missing!';
+				} else if (!parameter.sizes) {
+					errors += 'sizes parameter missing!';
+				}
+
+				if (errors) {
+					return '<span style="background:lightsalmon; padding:5px;">' + errors + '</span>';
+				} else {
+					const hostname = eleventyConfig.hostname ? eleventyConfig.hostname : '';
+					const arraySizes = parameter.sizes.replace(/ /g,'').split(',');
+					const maxSize = Math.max.apply(Math, arraySizes);
+					const baseUrl = `https://res.cloudinary.com/${eleventyConfig.cloudinaryCloudName}/image/fetch/`;
+					const imageSrc = `${baseUrl}q_auto,f_auto,w_${maxSize}/${hostname}${parameter.path}`;
+					const srcset = arraySizes.map(width => {
+						return `${baseUrl}q_auto,f_auto,w_${width}/${hostname}${parameter.path} ${width}w`;
+					}).join(',');
+
+					return '<img ' +
+						(parameter.width ? ' width="' + parameter.width + '"' : '') +
+						(parameter.height ? ' height="' + parameter.height + '"' : '') +
+						(parameter.sizes ? ' sizes="(max-width: ' + maxSize + 'px) 100vw, ' + maxSize + 'px"' : '') +
+						' src="' + imageSrc + '"' +
+						' srcset="' + srcset + '"' +
+						(parameter.alt ? ' alt="' + parameter.alt.trim() + '"' : '') +
+						(parameter.classes ? ' class="' + parameter.classes + '"' : '') +
+						'>';
+				}
 			});
 		//});
 	//};
-
 
 	/* Plugin: eleventy-plugin-respimg */
 	//const pluginRespimg = require('eleventy-plugin-respimg');
@@ -141,7 +159,7 @@ module.exports = function(eleventyConfig) {
 		// This is only used for URLs (it does not affect your file structure)
 		pathPrefix: "/",
 
-		markdownTemplateEngine: "liquid",
+		markdownTemplateEngine: "njk",
 		htmlTemplateEngine: "njk",
 		dataTemplateEngine: "njk",
 		dir: {
