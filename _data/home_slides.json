@@ -22,7 +22,7 @@
       "image": "/_includes/assets/uploads/banner3.jpg"
     },
     {
-      "enabled": true,
+      "enabled": false,
       "title": "Banner 4 - Generator",
       "link": "/services",
       "caption": "",
