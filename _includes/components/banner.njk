@@ -23,13 +23,15 @@
 					>
 					<!--<div class="cycle-overlay"></div>-->
 					{%- for banner in home_slides.slides -%}
-						<a href="{{ banner.link }}" data-cycle-title="{{ banner.title }}" data-cycle-desc="{{ banner.caption }}">
-							{% imgresp
-								path=banner.image,
-								sizes="200, 467, 664, 828, 900, 1000, 1200",
-								alt=banner.title
-							%}
-						</a>
+						{% if banner.enabled == true %}
+							<a href="{{ banner.link }}" data-cycle-title="{{ banner.title }}" data-cycle-desc="{{ banner.caption }}">
+								{% imgresp
+									path=banner.image,
+									sizes="200, 467, 664, 828, 900, 1000, 1200",
+									alt=banner.title
+								%}
+							</a>
+						{% endif %}
 					{%- endfor -%}
 				</div>
 				<span id="next">
