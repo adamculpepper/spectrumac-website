@@ -16,8 +16,10 @@ section: services
 
 <h3 class="mt-5">Products</h3>
 {%- for product in collections.products -%}
-	<div class="mb-3">
-		<h4>{{ product.data.title }}</h4>
-		{{ product.data.body }}
-	</div>
+	{% if product.data.enabled != false %}
+		<div class="mb-3">
+			<h4>{{ product.data.title }}</h4>
+			{{ product.data.body }}
+		</div>
+	{% endif %}
 {%- endfor -%}

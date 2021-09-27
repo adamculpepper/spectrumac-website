@@ -1,5 +1,6 @@
 ---
 date: 2020-10-03T23:10:15Z
+enabled: false
 title: Generators
 body: Whole home generators make every power outage as though your lights never went
   out.
